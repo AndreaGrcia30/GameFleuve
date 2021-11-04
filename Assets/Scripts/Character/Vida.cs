@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
-     HealthBar healthBar;
+    HealthBar healthBar;
     private int maxVida = 100;
-    private int vidaActual;
+    private int currentHealth;
     public void Start()
     {
-        vidaActual = maxVida;
+        currentHealth = maxVida;
         healthBar.SetMaxHealth(maxVida);
     }
     public void Update()
@@ -22,11 +22,10 @@ public class Vida : MonoBehaviour
     }
     void TakeDamage(int damage)
     {
-        vidaActual -= damage;
-        healthBar.SetHealth(vidaActual);
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 
-
-    
-
+    public int CurrentHealth {get => CurrentHealth; set => currentHealth = value > 0 ? value : 0;}
+    public HealthBar HealthBar => healthBar;
 }
