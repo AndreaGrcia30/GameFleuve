@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Character_Movement : MonoBehaviour
 {
-    public Rigidbody2D rb;
+     Rigidbody2D rb;
     Vector3 movement;
 
-    public float speed = 5.0f;
+    private float speed = 5.0f;
     private Animator anim;
     // Start is called before the first frame update
     void Start()

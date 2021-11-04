@@ -5,12 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 public class PickDialogue : MonoBehaviour
 {
-    public string dialogue;
-    public string[] sentences;
-    private DialogueManager dMan;
-    public bool dialogueActive;
-    public GameObject dBox;
-    public TextMeshProUGUI textDisplay;
+     string dialogue;
+     string[] sentences;
+     DialogueManager dMan;
+     bool dialogueActive;
+     GameObject dBox;
+    TextMeshProUGUI textDisplay;
     // Start is called before the first frame update
     void Start()
     {

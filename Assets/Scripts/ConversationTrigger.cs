@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 public class ConversationTrigger : MonoBehaviour
 {
-    public PlayableDirector timeline;
+     PlayableDirector timeline;
     // Start is called before the first frame update
     void Start()
     {

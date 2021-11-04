@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
-    public GameObject itemButton;
+    private GameObject itemButton;
 
     // Start is called before the first frame update
     void Start()
