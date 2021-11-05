@@ -4,27 +4,72 @@ using UnityEngine;
 
 public class MovmentRiver : MonoBehaviour
 {
-    [SerializeField]  private float speed = 3f;
 
-    private Rigidbody2D playerRb;
-    private Vector2 moveInput;
+    bool isTalking = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private float speed = 5.0f;
+
+    private Animator anim;
+
+
+
+    void Awake()
+
     {
-       playerRb = GetComponent<Rigidbody2D>(); 
+
+        anim = GetComponent<Animator>();
+
     }
 
-    // Update is called once per frame
+
+
     void Update()
+
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        moveInput = new Vector2(moveX, moveY).normalized;
+
+        Move();
+
     }
-    // se llama de intervalos fijos y va mejor con las físicas, por eso estoy usando este y no el void Update
-    private void FixedUpdate()
+
+
+
+    void LateUpdate()
+
     {
-        playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
+
+        if(!isTalking)
+
+        {
+
+            anim.SetFloat("magnitude", Axis.magnitude);
+
+            if(Axis.normalized.magnitude != 0)
+
+            {
+
+                anim.SetFloat("axisX", Axis.normalized.x);
+
+                anim.SetFloat("axisY", Axis.normalized.y);
+
+            }
+
+        }
+
     }
+    void Move()
+
+    {
+
+        transform.Translate(Axis.normalized * speed * Time.deltaTime);
+
+    }
+
+
+
+    Vector2 Axis => new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+
+
+    public bool IsTalking{get => isTalking; set => isTalking = value;}
+
 }
