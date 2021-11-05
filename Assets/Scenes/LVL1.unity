@@ -5607,6 +5607,7 @@ MonoBehaviour:
   hideClip: {fileID: 7400000, guid: 784a0b7d22e7a1645a17dec8c7383245, type: 2}
   showClip: {fileID: 7400000, guid: a91700a3b09efdd4c94f1d34483e8f62, type: 2}
   pauseMenu: {fileID: 1625908754}
+  btnContinue: {fileID: 120167582}
 --- !u!114 &1008445587
 MonoBehaviour:
   m_ObjectHideFlags: 0
