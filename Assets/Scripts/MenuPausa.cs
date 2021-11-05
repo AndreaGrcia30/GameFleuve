@@ -13,6 +13,9 @@ public class MenuPausa : MonoBehaviour
     GameObject pauseMenu;
     Animator pauseMenuAnim;
 
+    [SerializeField]
+    Button btnContinue;
+
     bool animatorIsRunning = false;
 
     bool CancelButton => Input.GetButton("Cancel");
@@ -20,11 +23,20 @@ public class MenuPausa : MonoBehaviour
     void Awake()
     {
         pauseMenuAnim = pauseMenu.GetComponent<Animator>();
+        btnContinue.onClick.AddListener(AnimateMenu);
     }
 
     void Update()
     {
-        if(CancelButton && !animatorIsRunning)
+        if(CancelButton)
+        {
+            AnimateMenu();
+        }
+    }
+
+    void AnimateMenu()
+    {
+        if(!animatorIsRunning)
         {
             animatorIsRunning = true;
             if(pauseMenu.activeSelf)
@@ -53,6 +65,7 @@ public class MenuPausa : MonoBehaviour
         animatorIsRunning = false;
         pauseMenu.SetActive(false);
     }
+
 }
 
 
