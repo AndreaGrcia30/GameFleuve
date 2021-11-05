@@ -7,13 +7,12 @@ using UnityEngine.UI;
 public class InventAppearScript : MonoBehaviour
 {
     // Start is called before the first frame update
-      Canvas CanvasObject; // Assign in inspector
+    [SerializeField]
+    Canvas CanvasObject; // Assign in inspector
  
      void Start()
      {
-         CanvasObject.enabled = false;
-         CanvasObject = GetComponent<Canvas> ();
-         
+        CanvasObject.enabled = false;
      }
  
      void Update() 

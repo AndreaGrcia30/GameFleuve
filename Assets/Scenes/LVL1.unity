@@ -4556,6 +4556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe03903dd87997c48b49ed535ce2c4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 1270546661}
 --- !u!1 &657070316
 GameObject:
   m_ObjectHideFlags: 0
@@ -9048,6 +9049,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7f19673d256be4890551af2c0415f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textDisplay: {fileID: 547573644}
+  sentences:
+  - "Deber\xEDa ir a encontrar a mi hermana..."
+  continueButton: {fileID: 607865412}
+  animator: {fileID: 2049349009}
+  dBox: {fileID: 893423840}
 --- !u!4 &1192506069
 Transform:
   m_ObjectHideFlags: 0
@@ -9063,6 +9070,17 @@ Transform:
   m_Father: {fileID: 2049349008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270546661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3734415612296480663, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
+  m_PrefabInstance: {fileID: 3734415611597397516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27272d424998b034191ef27426e1e584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1292132081
 GameObject:
   m_ObjectHideFlags: 0
@@ -12121,7 +12139,7 @@ Canvas:
   m_GameObject: {fileID: 2049349004}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1485897304}
   m_PlaneDistance: 100
   m_PixelPerfect: 0

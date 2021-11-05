@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.Playables;
 public class ConversationTrigger : MonoBehaviour
 {
-     PlayableDirector timeline;
+    //PlayableDirector timeline;
     // Start is called before the first frame update
     void Start()
     {
-        timeline = GetComponent<PlayableDirector>();
+        //timeline = GetComponent<PlayableDirector>();
     }
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class ConversationTrigger : MonoBehaviour
         
     }
     
-    void OnTriggerExit (Collider2D c)
+    /*void OnTriggerExit (Collider2D c)
     {
         if (c.gameObject.tag == "River")
         {
@@ -31,6 +31,6 @@ public class ConversationTrigger : MonoBehaviour
         {
             timeline.Play();
         }
-    }
+    }*/
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
+    [SerializeField]
     HealthBar healthBar;
     private int maxVida = 100;
     private int currentHealth;
