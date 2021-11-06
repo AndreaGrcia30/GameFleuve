@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe03903dd87997c48b49ed535ce2c4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 1261369544}
 --- !u!70 &6134607
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -134146,6 +134147,17 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!114 &1261369544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3734415612296480663, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
+  m_PrefabInstance: {fileID: 2047514304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27272d424998b034191ef27426e1e584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!213 &1305824658
 Sprite:
   m_ObjectHideFlags: 0
