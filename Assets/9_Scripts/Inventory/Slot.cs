@@ -12,8 +12,9 @@ public class Slot : MonoBehaviour
     }
 
     private void Update() {
-        if (transform.childCount <= 0) {
-            inventory.IsFull[i] = false;
+        if (transform.childCount <= 0) 
+        {
+            //inventory.IsFull[i] = false;
         }
     }
     public void DropItem()
