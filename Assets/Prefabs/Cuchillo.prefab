@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,8 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 2059751080795363879, guid: 69a5a58b527986243aad695b0203b87f,
-    type: 3}
+  m_Sprite: {fileID: 2059751080795363879, guid: 69a5a58b527986243aad695b0203b87f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_Size: {x: 1.09, y: 1.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4108575947086997422
@@ -97,8 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87308b5f7bd909468789d6357c56288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 3449873578449005105, guid: 2ece5d075b5cb87449036b27fb77af39,
-    type: 3}
 --- !u!61 &4108575947086997423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,8 +135,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df483c9f829e6c45bed59f88a7bf0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: "Soooolo como precauci\xF3n..."
-  sentences: []
-  dialogueActive: 1
-  dBox: {fileID: 0}
-  textDisplay: {fileID: 0}
