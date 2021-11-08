@@ -16,8 +16,18 @@ MonoBehaviour:
   m_Key: sandwich
   m_Tags:
   - {fileID: 4394242749171155320}
-  m_StaticPropertyKeys: []
-  m_StaticPropertyValues: []
+  m_StaticPropertyKeys:
+  - health
+  - sprite
+  m_StaticPropertyValues:
+  - <type>k__BackingField: 0
+    m_ValueType:
+      longValue: 20
+    m_StringValue: 
+  - <type>k__BackingField: 3
+    m_ValueType:
+      longValue: 0
+    m_StringValue: assets/sprites/props/sandwich.png
   m_InitialAllocation: 0
   m_IsStackableFlag: 1
   m_InitialQuantityPerStack: 1
@@ -104,8 +114,13 @@ MonoBehaviour:
   m_InitialAllocation: 0
   m_IsStackableFlag: 0
   m_InitialQuantityPerStack: 1
-  m_MutablePropertyKeys: []
-  m_MutablePropertyDefaultValues: []
+  m_MutablePropertyKeys:
+  - damage
+  m_MutablePropertyDefaultValues:
+  - <type>k__BackingField: 0
+    m_ValueType:
+      longValue: 25
+    m_StringValue: 
 --- !u!114 &7638876387986742844
 MonoBehaviour:
   m_ObjectHideFlags: 0

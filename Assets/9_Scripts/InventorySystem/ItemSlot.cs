@@ -12,5 +12,7 @@ public class ItemSlot : MonoBehaviour
     [SerializeField]
     string itemId;
 
-    public string ItemId => itemId;
+    public string ItemId {get => itemId; set => itemId = value;}
+    public Image ItemImage => itemImage;
+    public string ItemName {get => itemName; set => itemName = value;}
 }

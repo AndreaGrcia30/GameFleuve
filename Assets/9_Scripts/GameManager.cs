@@ -5,6 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField]
+    InventorySystem inventorySystem;
+    [SerializeField]
+    GFInit gf;
 
     void Awake()
     {
@@ -18,4 +22,7 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
+
+    public GFInit GetGameFoundation => gf;
+    public InventorySystem GetInventorySystem => inventorySystem;
 }
