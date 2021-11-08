@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &4888994957657950697
@@ -122,8 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87308b5f7bd909468789d6357c56288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 851648564411925154, guid: 58fe1220e9b74164bbdc7cc9b8f42582,
-    type: 3}
 --- !u!114 &4888994957657950699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,8 +135,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df483c9f829e6c45bed59f88a7bf0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Lo llevare por si acaso.
-  sentences: []
-  dialogueActive: 0
-  dBox: {fileID: 0}
-  textDisplay: {fileID: 0}
