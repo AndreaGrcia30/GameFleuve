@@ -5,11 +5,16 @@ using UnityEngine.UI;
 using TMPro;
 public class PickDialogue : MonoBehaviour
 {
+    [SerializeField]
      string dialogue;
      string[] sentences;
+     [SerializeField]
      DialogueManager dMan;
+     
      bool dialogueActive;
+     [SerializeField]
      GameObject dBox;
+    [SerializeField]
     TextMeshProUGUI textDisplay;
     // Start is called before the first frame update
     void Start()
