@@ -5,7 +5,7 @@ using UnityEngine;
 public class Slot : MonoBehaviour
 {
     private Inventory inventory;
-    public int i;
+    private int i;
 
     private void Start() {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -13,7 +13,7 @@ public class Slot : MonoBehaviour
 
     private void Update() {
         if (transform.childCount <= 0) {
-            inventory.isFull[i] = false;
+            inventory.IsFull[i] = false;
         }
     }
     public void DropItem()

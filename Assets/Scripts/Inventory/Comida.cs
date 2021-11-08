@@ -5,9 +5,9 @@ using UnityEngine;
 public class Comida : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject itemButton;
+    private GameObject itemButton;
     private Transform player;
-    public GameObject effect;
+    private GameObject effect;
    
     void Start()
     {
@@ -30,9 +30,9 @@ public class Comida : MonoBehaviour
     {
         GameObject thePlayer = GameObject.Find("River");
         Vida vida = thePlayer.GetComponent<Vida>();
-        vida.vidaActual += heal;
-        Debug.Log("vidaActual" + vida.vidaActual);
-        vida.healthBar.SetHealth(vida.vidaActual);
+        vida.CurrentHealth += heal;
+        Debug.Log("vidaActual" + vida.CurrentHealth);
+        vida.HealthBar.SetHealth(vida.CurrentHealth);
     }
 
 }

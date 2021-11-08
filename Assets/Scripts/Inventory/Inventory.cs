@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public bool[] isFull;
-    public GameObject[] slots;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+     bool[] isFull;
+     GameObject[] slots;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+     public bool[] IsFull => isFull;
+     public GameObject[] Slots => slots;
 }

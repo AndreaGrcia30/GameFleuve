@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
-    public GameObject itemButton;
+    private GameObject itemButton;
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +22,11 @@ public class PickUp : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
 
         if (other.CompareTag("Player")) {
-            for (int i = 0; i < inventory.slots.Length; i++)
+            for (int i = 0; i < inventory.Slots.Length; i++)
             {
-                if (inventory.isFull[i] == false) {
-                    inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                if (inventory.IsFull[i] == false) {
+                    inventory.IsFull[i] = true;
+                    Instantiate(itemButton, inventory.Slots[i].transform, false);
                     Destroy(gameObject);
                     break;
                     

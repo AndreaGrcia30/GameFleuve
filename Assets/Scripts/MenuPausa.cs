@@ -5,44 +5,55 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class MenuPausa : MonoBehaviour
 {
-    public Canvas CanvasObjects;  
-    public Animator animator;
- 
-     void Start()
-     {
-         CanvasObjects.enabled = false;
-         CanvasObjects = GetComponent<Canvas> ();
-         
-     }
- 
-     void Update() 
-     {
-         if (Input.GetKeyDown(KeyCode.Escape)) 
-         {
-            if(CanvasObjects.enabled == false)
+    [SerializeField]
+    AnimationClip hideClip;
+    [SerializeField]
+    AnimationClip showClip;
+    [SerializeField]
+    GameObject pauseMenu;
+    Animator pauseMenuAnim;
+
+    bool animatorIsRunning = false;
+
+    bool CancelButton => Input.GetButton("Cancel");
+
+    void Awake()
+    {
+        pauseMenuAnim = pauseMenu.GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if(CancelButton && !animatorIsRunning)
+        {
+            animatorIsRunning = true;
+            if(pauseMenu.activeSelf)
             {
-                animator.SetBool("IsOpen", true);
-                CanvasObjects.enabled = true;
-                //Time.timeScale = 0;
-            }  else {
-                
-                Return();
-                
+                StartCoroutine(Hide());
             }
-             
-         }
-     }
-  
- public void Return()
-  {
-      animator.SetBool("IsOpen", false);
-      CanvasObjects.enabled = false;
-      Time.timeScale = 1;
+            else
+            {
+                StartCoroutine(Show());
+            }
+        }
+    }
 
-  }
+    IEnumerator Show()
+    {
+        pauseMenu.SetActive(true);
+        pauseMenuAnim.SetTrigger("show");
+        yield return new WaitForSeconds(showClip.length);
+        animatorIsRunning = false;
+    }
 
-  
-  }
+    IEnumerator Hide()
+    {
+        pauseMenuAnim.SetTrigger("hide");
+        yield return new WaitForSeconds(hideClip.length);
+        animatorIsRunning = false;
+        pauseMenu.SetActive(false);
+    }
+}
 
 
 
