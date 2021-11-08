@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.GameFoundation;
 using UnityEngine.GameFoundation.DefaultLayers;
@@ -7,12 +8,13 @@ using UnityEngine.Promise;
 
 public class GFInit : MonoBehaviour
 {
+    [SerializeField]
+    List<InventoryItem> items = new List<InventoryItem>();
+
     IEnumerator Start()
     {
-        
         MemoryDataLayer dataLayer = new MemoryDataLayer();
 
-       
         using (Deferred initDeferred = GameFoundationSdk.Initialize(dataLayer))
         {
             yield return initDeferred.Wait();
@@ -24,36 +26,38 @@ public class GFInit : MonoBehaviour
         }
     }
 
-   
+
     void OnInitSucceeded()
     {
         Debug.Log("Game Foundation is successfully initialized");
-        const string definitionKey = "sandwich";
-        InventoryItemDefinition definition = GameFoundationSdk.catalog.Find<InventoryItemDefinition>(definitionKey);
-        if (definition is null)
-        {
-        Debug.Log($"Definition {definitionKey} not found");
-        return;
-        }
-        Debug.Log($"Definition {definition.key} '{definition.displayName}' found.");
-        InventoryItem item = GameFoundationSdk.inventory.CreateItem(definition);
+        const string itemName = "sandwich";
+        InventoryItemDefinition itemDefiniton = GetItem(itemName);
 
-        Debug.Log($"Item {item.id} of definition '{item.definition.key}' created");
+        /*Debug.Log($"Name: {itemDefiniton.displayName}, Key: {itemDefiniton.key}");
 
-        bool removed = GameFoundationSdk.inventory.Delete(item);
+        InventoryItem itemSandwich = CreateItem(itemDefiniton);
 
-        if (!removed)
-        {
-        Debug.LogError($"Unable to remove item {item.id}");
-        return;
-        }
+        Debug.Log($"Item {itemSandwich.id} of definition '{itemSandwich.definition.key}' created");
 
-        Debug.Log($"Item {item.id} successfully removed. Its discarded value is {item.hasBeenDiscarded.ToString()}");
+        const string propertyKey = "health";
+
+        Property helthProperty = itemDefiniton.GetStaticProperty(propertyKey);
+
+        Debug.Log($"{itemSandwich.definition.displayName} health: {helthProperty.AsString()}");*/
+
+        //Debug.Log(GameFoundationSdk.inventory.GetItems());
     }
 
-   
+
     void OnInitFailed(Exception error)
     {
         Debug.LogException(error);
     }
+
+    public InventoryItemDefinition GetItem(string itemName) => GameFoundationSdk.catalog.Find<InventoryItemDefinition>(itemName);
+    public InventoryItem CreateItem(InventoryItemDefinition itemDefiniton) => GameFoundationSdk.inventory.CreateItem(itemDefiniton);
+    public Property GetStaticProperty(InventoryItemDefinition itemDefiniton, string propertyKey) => itemDefiniton.GetStaticProperty(propertyKey);
+    public int ItemCount => GameFoundationSdk.inventory.GetItems();
+    public void AddItemToInventory(InventoryItem item) => items.Add(item);
+    public List<InventoryItem> Items => items;
 }
