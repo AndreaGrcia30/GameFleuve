@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 1965677015}
+  m_LightingSettings: {fileID: 276243311}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 108287064}
   - component: {fileID: 108287066}
   - component: {fileID: 108287065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CamaOsito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 176712604}
   - component: {fileID: 176712607}
   - component: {fileID: 176712608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 87
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -412,11 +412,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176712603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.52, y: 1.33, z: -11.05}
+  m_LocalPosition: {x: 5.52, y: 0.67, z: -2.3899999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &176712607
 MonoBehaviour:
@@ -427,10 +427,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 176712603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04af219c985ecba4496d15654820daaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &176712608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +489,67 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3734415611656016853, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
   m_PrefabInstance: {fileID: 3734415611597397516}
   m_PrefabAsset: {fileID: 0}
+--- !u!850595691 &276243311
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings.lighting
+  serializedVersion: 3
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 0
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_TextureCompression: 1
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 512
+  m_PVREnvironmentSampleCount: 256
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 2
+  m_PVREnvironmentMIS: 1
+  m_PVRFilteringMode: 1
+  m_PVRDenoiserTypeDirect: 1
+  m_PVRDenoiserTypeIndirect: 1
+  m_PVRDenoiserTypeAO: 1
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1 &322712763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3734415611914332855, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
@@ -578,7 +660,7 @@ GameObject:
   - component: {fileID: 544607369}
   - component: {fileID: 544607370}
   - component: {fileID: 544607371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +887,7 @@ GameObject:
   - component: {fileID: 573241598}
   - component: {fileID: 573241597}
   - component: {fileID: 573241596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Piso '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4286,13 +4368,13 @@ GameObject:
   m_Component:
   - component: {fileID: 636047972}
   - component: {fileID: 636047971}
+  - component: {fileID: 636047973}
   - component: {fileID: 636047969}
   - component: {fileID: 636047970}
   - component: {fileID: 636047976}
   - component: {fileID: 636047974}
   - component: {fileID: 636047975}
-  - component: {fileID: 636047973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: River
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4410,10 +4492,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 636047968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04af219c985ecba4496d15654820daaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 5086ef613c53cf24a9128ba83f469215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  rb: {fileID: 636047969}
+  speed: 7
 --- !u!95 &636047974
 Animator:
   serializedVersion: 3
@@ -4709,7 +4792,7 @@ GameObject:
   - component: {fileID: 800996084}
   - component: {fileID: 800996086}
   - component: {fileID: 800996085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4789,7 +4872,7 @@ GameObject:
   - component: {fileID: 893134798}
   - component: {fileID: 893134803}
   - component: {fileID: 893134802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: props sin collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5155,7 +5238,7 @@ GameObject:
   - component: {fileID: 945939362}
   - component: {fileID: 945939363}
   - component: {fileID: 945939364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Comida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5345,7 +5428,7 @@ GameObject:
   - component: {fileID: 1136693833}
   - component: {fileID: 1136693832}
   - component: {fileID: 1136693834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8617,7 +8700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1192506069}
   - component: {fileID: 1192506068}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8970,7 +9053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485897303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 0.09, z: -37.92525}
+  m_LocalPosition: {x: 5.59, y: 0.09, z: -37.92525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9037,6 +9120,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 636047972}
+  m_Lens:
+    FieldOfView: 60
+    OrthographicSize: 5
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 1737362900}
 --- !u!4 &1549649439
 Transform:
   m_ObjectHideFlags: 0
@@ -9045,7 +9151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549649437}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.52, y: 1.33, z: -11.05}
+  m_LocalPosition: {x: 5.52, y: 0.67, z: -2.3899999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1737362900}
@@ -9063,7 +9169,7 @@ GameObject:
   - component: {fileID: 1580536030}
   - component: {fileID: 1580536032}
   - component: {fileID: 1580536031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Librero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9200,7 +9306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1598218100}
   - component: {fileID: 1598218099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Casa River '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9252,7 +9358,7 @@ GameObject:
   - component: {fileID: 1611473454}
   - component: {fileID: 1611473453}
   - component: {fileID: 1611473451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Props interactuables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9824,7 +9930,7 @@ GameObject:
   - component: {fileID: 1709832718}
   - component: {fileID: 1709832720}
   - component: {fileID: 1709832721}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11384,6 +11490,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: -3.81, y: -0.66, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_CameraDistance: 1.3399999
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_DeadZoneDepth: 0
+  m_UnlimitedSoftZone: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+  m_GroupFramingMode: 2
+  m_AdjustmentMode: 0
+  m_GroupFramingSize: 0.8
+  m_MaxDollyIn: 5000
+  m_MaxDollyOut: 5000
+  m_MinimumDistance: 1
+  m_MaximumDistance: 5000
+  m_MinimumFOV: 3
+  m_MaximumFOV: 60
+  m_MinimumOrthoSize: 1
+  m_MaximumOrthoSize: 5000
 --- !u!114 &1737362902
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -11401,67 +11538,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3734415613362169641, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
   m_PrefabInstance: {fileID: 3734415611597397516}
   m_PrefabAsset: {fileID: 0}
---- !u!850595691 &1965677015
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Settings.lighting
-  serializedVersion: 3
-  m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 0
-  m_EnableRealtimeLightmaps: 0
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_TextureCompression: 1
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 256
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
-  m_PVREnvironmentMIS: 1
-  m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 1
-  m_PVRDenoiserTypeIndirect: 1
-  m_PVRDenoiserTypeAO: 1
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1 &2016799371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3734415613609276551, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
@@ -11655,6 +11731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sandwich
       objectReference: {fileID: 0}
+    - target: {fileID: 4888994957657950703, guid: e226544197dcb234a95d61662d1b1d11, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e226544197dcb234a95d61662d1b1d11, type: 3}
 --- !u!1001 &1212110879166012543
@@ -11722,7 +11802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108575947086997420, guid: b0739a77103524c428144d286cde1802, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0739a77103524c428144d286cde1802, type: 3}
@@ -11824,6 +11904,10 @@ PrefabInstance:
     - target: {fileID: 3734415613322060814, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
       propertyPath: m_Name
       value: Inventory Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734415613322060814, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3734415613331966088, guid: c18c0edd83a0c374ba5e8733ed5bf924, type: 3}
       propertyPath: m_AnchorMax.x

@@ -5,9 +5,9 @@ using UnityEngine;
 public class Comida : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject itemButton;
+    private GameObject itemButton;
     private Transform player;
-    public GameObject effect;
+    private GameObject effect;
    
     void Start()
     {

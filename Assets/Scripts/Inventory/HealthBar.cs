@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
-    public Slider slider;
-    public Gradient gradient;
-    public Image fill;
+     Slider slider;
+     Gradient gradient;
+     Image fill;
     public void SetHealth(int health)
     {
         slider.value = health;

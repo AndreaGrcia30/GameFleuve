@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class MenuPausa : MonoBehaviour
 {
-    public Canvas CanvasObjects;  
-    public Animator animator;
+     Canvas CanvasObjects;  
+     Animator animator;
  
      void Start()
      {

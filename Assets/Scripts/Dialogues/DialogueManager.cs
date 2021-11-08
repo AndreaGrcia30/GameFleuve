@@ -5,14 +5,14 @@ using UnityEngine.UI;
 using TMPro;
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
-    public string[] sentences;
+     TextMeshProUGUI textDisplay;
+    private string[] sentences;
     private int index;
-    public float typingSpeed;
-    public GameObject continueButton;
-    public Animator animator;
-    public GameObject dBox;
-    public bool dialogueActive;
+    private float typingSpeed;
+     GameObject continueButton;
+     Animator animator;
+     GameObject dBox;
+    private bool dialogueActive;
 
     IEnumerator Type()
     {

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InventAppearScript : MonoBehaviour
 {
     // Start is called before the first frame update
-     public Canvas CanvasObject; // Assign in inspector
+      Canvas CanvasObject; // Assign in inspector
  
      void Start()
      {

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
-    public HealthBar healthBar;
-    public int maxVida = 100;
-    public int vidaActual;
+     HealthBar healthBar;
+    private int maxVida = 100;
+    private int vidaActual;
     public void Start()
     {
         vidaActual = maxVida;

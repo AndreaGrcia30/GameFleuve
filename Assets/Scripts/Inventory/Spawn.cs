@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    public GameObject item;
+    private GameObject item;
     private Transform player;
     void Start()
     {
