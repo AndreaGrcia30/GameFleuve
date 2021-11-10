@@ -37,7 +37,7 @@ public class Character_Movement : MonoBehaviour
         transform.Translate(Axis.normalized * speed * Time.deltaTime);
     }
 
-    Vector2 Axis => new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+    Vector2 Axis => new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
     public bool IsTalking{get => isTalking; set => isTalking = value;}
 
