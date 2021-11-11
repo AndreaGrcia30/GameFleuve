@@ -10,6 +10,8 @@ public class GFInit : MonoBehaviour
 {
     [SerializeField]
     List<InventoryItem> items = new List<InventoryItem>();
+    List<string> itemDefinitionKeys = new List<string>();
+
 
     IEnumerator Start()
     {
@@ -59,5 +61,7 @@ public class GFInit : MonoBehaviour
     public Property GetStaticProperty(InventoryItemDefinition itemDefiniton, string propertyKey) => itemDefiniton.GetStaticProperty(propertyKey);
     public int ItemCount => GameFoundationSdk.inventory.GetItems();
     public void AddItemToInventory(InventoryItem item) => items.Add(item);
+    public void AddItemDefinitionKeyToInventory(string item) => itemDefinitionKeys.Add(item);
     public List<InventoryItem> Items => items;
+    public List<string> ItemDefinitionKeys => itemDefinitionKeys;
 }
