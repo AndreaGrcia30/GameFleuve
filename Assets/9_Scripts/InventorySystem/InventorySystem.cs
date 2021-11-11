@@ -7,8 +7,6 @@ using UnityEngine.GameFoundation;
 public class InventorySystem : MonoBehaviour
 {
     [SerializeField]
-    GameObject mainContainer;
-    [SerializeField]
     Transform itemsSlotsTransform;
     [SerializeField]
     List<ItemSlot> itemSlots = new List<ItemSlot>();
@@ -37,6 +35,7 @@ public class InventorySystem : MonoBehaviour
         emptyItemSlot.ItemName = item.definition.key;
         Sprite sprite = Resources.Load<Sprite>(GameManager.instance.GetGameFoundation.GetStaticProperty(item.definition, "sprite"));
         emptyItemSlot.ItemSprite = sprite;
+        emptyItemSlot.ActiveImage(true);
         emptyItemSlot.ItemImage.sprite = sprite;
     }
 
@@ -65,6 +64,7 @@ public class InventorySystem : MonoBehaviour
             itemSlot.ItemName = null;
             itemSlot.ItemSprite = null;
             itemSlot.ItemImage.sprite = null;
+            itemSlot.ActiveImage(false);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
 
-[SerializeField]    Slider slider;
+    [SerializeField] Slider slider;
     [SerializeField]
     Gradient gradient;
     [SerializeField]

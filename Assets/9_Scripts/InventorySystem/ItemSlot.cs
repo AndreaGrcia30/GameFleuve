@@ -18,4 +18,5 @@ public class ItemSlot : MonoBehaviour
     public Image ItemImage => itemImage;
     public Sprite ItemSprite {get => sprite; set => sprite = value;}
     public string ItemName {get => itemName; set => itemName = value;}
+    public void ActiveImage(bool show) => itemImage.gameObject.SetActive(show);
 }
