@@ -27,7 +27,7 @@ MonoBehaviour:
   - <type>k__BackingField: 3
     m_ValueType:
       longValue: 0
-    m_StringValue: assets/sprites/props/sandwich.png
+    m_StringValue: sprites/props/sandwich
   m_InitialAllocation: 0
   m_IsStackableFlag: 1
   m_InitialQuantityPerStack: 1
