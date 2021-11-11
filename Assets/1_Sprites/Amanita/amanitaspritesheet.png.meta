@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: edbe62217ffa20b40944ddfb018436f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8013980044172001023
+    second: amanitaspritesheet_0
+  - first:
+      213: -6401273870148171199
+    second: amanitaspritesheet_1
+  - first:
+      213: 3084117830455819669
+    second: amanitaspritesheet_2
+  - first:
+      213: -4107963794676852876
+    second: amanitaspritesheet_3
+  - first:
+      213: 3298843883792091578
+    second: amanitaspritesheet_4
+  - first:
+      213: 305593673383906893
+    second: amanitaspritesheet_5
+  - first:
+      213: 889470614569264791
+    second: amanitaspritesheet_6
+  - first:
+      213: -4527361846785153626
+    second: amanitaspritesheet_7
+  - first:
+      213: -2908171427116485309
+    second: amanitaspritesheet_8
+  - first:
+      213: 8484350948394000680
+    second: amanitaspritesheet_9
+  - first:
+      213: 554921226488644135
+    second: amanitaspritesheet_10
+  - first:
+      213: -1724796465566507803
+    second: amanitaspritesheet_11
+  - first:
+      213: -2849543992233110793
+    second: amanitaspritesheet_12
+  - first:
+      213: 1742873938712375428
+    second: amanitaspritesheet_13
+  - first:
+      213: 7097859209391292699
+    second: amanitaspritesheet_14
+  - first:
+      213: -9013270052482654378
+    second: amanitaspritesheet_15
+  - first:
+      213: 7418375901780833472
+    second: amanitaspritesheet_16
+  - first:
+      213: 3494839810218418555
+    second: amanitaspritesheet_17
+  - first:
+      213: -4184984520133559590
+    second: amanitaspritesheet_18
+  - first:
+      213: 6659271136501393429
+    second: amanitaspritesheet_19
+  - first:
+      213: -3920484138005431215
+    second: amanitaspritesheet_20
+  - first:
+      213: 7775157318944257490
+    second: amanitaspritesheet_21
+  - first:
+      213: -4762671631390476792
+    second: amanitaspritesheet_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: amanitaspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2319
+        width: 443
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1010f061c9f98c090800000000000000
+      internalID: -8013980044172001023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 2320
+        width: 440
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a04db945b1a27a0800000000000000
+      internalID: -6401273870148171199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 2319
+        width: 429
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d74c193dcfcca20800000000000000
+      internalID: 3084117830455819669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 2321
+        width: 445
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477de1491b49df6c0800000000000000
+      internalID: -4107963794676852876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1867
+        width: 430
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9c5e6c809d7cd20800000000000000
+      internalID: 3298843883792091578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1869
+        width: 446
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e87aba3dfad3400800000000000000
+      internalID: 305593673383906893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1885
+        width: 452
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796ac83bfc8085c00800000000000000
+      internalID: 889470614569264791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1888
+        width: 448
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5e6b823649b21c0800000000000000
+      internalID: -4527361846785153626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1436
+        width: 448
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345f7c4ce7914a7d0800000000000000
+      internalID: -2908171427116485309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1437
+        width: 441
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821e5cc4c387eb570800000000000000
+      internalID: 8484350948394000680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1428
+        width: 446
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7220e275ae973b700800000000000000
+      internalID: 554921226488644135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1435
+        width: 452
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec1f00c0ca4018e0800000000000000
+      internalID: -1724796465566507803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1005
+        width: 448
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2d81b26d26478d0800000000000000
+      internalID: -2849543992233110793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 881
+        width: 355
+        height: 483
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480bc35fc9eef2810800000000000000
+      internalID: 1742873938712375428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 933
+        width: 345
+        height: 411
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fda1144ae6ae280800000000000000
+      internalID: -9013270052482654378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1005
+        width: 370
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4f6f3149d53f660800000000000000
+      internalID: 7418375901780833472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 495
+        width: 419
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7166fa7a4a208030800000000000000
+      internalID: 3494839810218418555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 532
+        width: 380
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada3eee70c2fbe5c0800000000000000
+      internalID: -4184984520133559590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 495
+        width: 374
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5186d2af0db7a6c50800000000000000
+      internalID: 6659271136501393429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 495
+        width: 386
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cf1a6b274a799c0800000000000000
+      internalID: -3920484138005431215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 434
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d573741368e6eb60800000000000000
+      internalID: 7775157318944257490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: amanitaspritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 26
+        width: 447
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806f32d826797edb0800000000000000
+      internalID: -4762671631390476792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3c2b493469adc0442b8e164c84178cf8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

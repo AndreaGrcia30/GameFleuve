@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     InventorySystem inventorySystem;
     [SerializeField]
     GFInit gf;
+    [SerializeField]
+    Vida health;
+    GameData gameData;
 
     void Awake()
     {
@@ -25,4 +28,6 @@ public class GameManager : MonoBehaviour
 
     public GFInit GetGameFoundation => gf;
     public InventorySystem GetInventorySystem => inventorySystem;
+    public Vida GetHealth => health;
+    public GameData CurrentGameData{get => gameData; set => gameData = value;}
 }

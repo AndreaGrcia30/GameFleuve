@@ -2,16 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.GameFoundation;
+using System.IO;
+using GameLib.MemorySystem;
 
 public class Character_Movement : MonoBehaviour
 {
     bool isTalking = false;
     private float speed = 5.0f;
     private Animator anim;
+    [SerializeField]
+    Vida health;
+
+    string savePath;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+
+    void Start()
+    {
+        //MemorySystem.NewGame("juegoperron");
+        //MemorySystem.LoadGame("gamedata");
     }
 
     void Update()
@@ -49,7 +61,8 @@ public class Character_Movement : MonoBehaviour
             InventoryItemDefinition definition = GameManager.instance.GetGameFoundation.GetItem(other.tag);
             InventoryItem item = GameManager.instance.GetGameFoundation.CreateItem(definition);
             //Debug.Log(GameManager.instance.GetGameFoundation.ItemCount);
-             GameManager.instance.GetGameFoundation.AddItemToInventory(item);
+            GameManager.instance.GetGameFoundation.AddItemToInventory(item);
+            GameManager.instance.GetGameFoundation.AddItemDefinitionKeyToInventory(definition.key);
 
             /*Property spriteProperty = GameManager.instance.GetGameFoundation.GetStaticProperty(definition, "sprite");
             Debug.Log($"{item.definition.displayName} sprite: {spriteProperty.AsString()}");*/
@@ -61,6 +74,7 @@ public class Character_Movement : MonoBehaviour
                 Debug.Log($"{item.definition.displayName} health: {helthProperty.AsString()}");
             }*/
             Destroy(other.gameObject);
+            //MemorySystem.SaveGame(new GameData(health.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
         }
     }
 }
