@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
+using GameLib.MemorySystem;
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField]
@@ -16,9 +18,18 @@ public class MenuPausa : MonoBehaviour
     [SerializeField]
     Button btnContinue;
 
+    Vida health;
+
     bool animatorIsRunning = false;
 
     bool CancelButton => Input.GetButton("Cancel");
+
+     void Start() 
+     {
+         MemorySystem.NewGame("juegoperron");
+         MemorySystem.LoadGame("gamedata");
+         MemorySystem.SaveGame(new GameData(health.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+    }
 
     void Awake()
     {
@@ -65,7 +76,8 @@ public class MenuPausa : MonoBehaviour
         animatorIsRunning = false;
         pauseMenu.SetActive(false);
     }
-
+    public static FileInfo[] FilePaths => new DirectoryInfo(Application.persistentDataPath + "/").GetFiles("*.data*");
+   
 }
 
 
