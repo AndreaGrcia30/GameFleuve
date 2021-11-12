@@ -25,6 +25,18 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
+    //en que nivel estoy??
+    void OnLevelWasLoaded(int level) 
+    {
+        if (InGameplay(level))
+        {
+            inventorySystem = GameObject.FindWithTag("inventory").GetComponent<InventorySystem>();
+            health = GameObject.FindWithTag("Player").GetComponent<Vida>();
+        }
+        
+    }
+
+    bool InGameplay(int level) => level > 13 && level < 5;
 
     public GFInit GetGameFoundation => gf;
     public InventorySystem GetInventorySystem => inventorySystem;
