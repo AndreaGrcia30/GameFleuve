@@ -27,6 +27,6 @@ public class Vida : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    public int CurrentHealth {get => CurrentHealth; set => currentHealth = value > 0 ? value : 0;}
+    public int CurrentHealth {get => currentHealth; set => currentHealth = value > 0 ? value : 0;}
     public HealthBar HealthBar => healthBar;
 }
