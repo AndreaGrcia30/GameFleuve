@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.IO;
 using GameLib.MemorySystem;
+
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField]
@@ -17,8 +18,8 @@ public class MenuPausa : MonoBehaviour
 
     [SerializeField]
     Button btnContinue;
-
-    Vida health;
+    [SerializeField]
+    Button btnSaveGame;
 
     bool animatorIsRunning = false;
 
@@ -26,15 +27,16 @@ public class MenuPausa : MonoBehaviour
 
      void Start() 
      {
-         MemorySystem.NewGame("juegoperron");
-         MemorySystem.LoadGame("gamedata");
-         MemorySystem.SaveGame(new GameData(health.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+        // MemorySystem.NewGame("juegoperron");
+        //MemorySystem.LoadGame("gamedata");
+        //MemorySystem.SaveGame(new GameData(GameManager.instance.GetHealth.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
     }
 
     void Awake()
     {
         pauseMenuAnim = pauseMenu.GetComponent<Animator>();
         btnContinue.onClick.AddListener(AnimateMenu);
+        btnSaveGame.onClick.AddListener(SaveGame);
     }
 
     void Update()
@@ -43,6 +45,12 @@ public class MenuPausa : MonoBehaviour
         {
             AnimateMenu();
         }
+    }
+
+    void SaveGame()
+    {
+        MemorySystem.SaveGame(new GameData(GameManager.instance.GetHealth.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+        AnimateMenu();
     }
 
     void AnimateMenu()

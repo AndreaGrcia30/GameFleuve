@@ -21,16 +21,9 @@ public class InventorySystem : MonoBehaviour
 
     public void AddItem(InventoryItem item, int index)
     {
-        /*ItemSlot emptyItemSlot = itemSlots.FirstOrDefault(itemSlot => string.IsNullOrEmpty(itemSlot.ItemId));
-        if(emptyItemSlot)
-        {
-            emptyItemSlot.ItemId = item.id;
-            emptyItemSlot.ItemName = item.definition.key;
-            Sprite sprite = Resources.Load<Sprite>(GameManager.instance.GetGameFoundation.GetStaticProperty(item.definition, "sprite"));
-            emptyItemSlot.ItemImage.sprite = sprite;
-        }*/
         //logica para cargar los items en las slots vacias
         ItemSlot emptyItemSlot = itemSlots[index];
+        emptyItemSlot.SetInventoryItem(item);
         emptyItemSlot.ItemId = item.id;
         emptyItemSlot.ItemName = item.definition.key;
         Sprite sprite = Resources.Load<Sprite>(GameManager.instance.GetGameFoundation.GetStaticProperty(item.definition, "sprite"));
@@ -65,6 +58,7 @@ public class InventorySystem : MonoBehaviour
             itemSlot.ItemSprite = null;
             itemSlot.ItemImage.sprite = null;
             itemSlot.ActiveImage(false);
+            itemSlot.SetInventoryItem(null);
         }
     }
 }
