@@ -23,7 +23,7 @@ public class Character_Movement : MonoBehaviour
     void Start()
     {
         //MemorySystem.NewGame("juegoperron");
-        //MemorySystem.LoadGame("gamedata");
+        MemorySystem.LoadGame("gamedata");
     }
 
     void Update()
@@ -57,7 +57,7 @@ public class Character_Movement : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
-            Debug.Log("item collected");
+            //Item collectedItem = other.GetComponent<Item>();
             InventoryItemDefinition definition = GameManager.instance.GetGameFoundation.GetItem(other.tag);
             InventoryItem item = GameManager.instance.GetGameFoundation.CreateItem(definition);
             //Debug.Log(GameManager.instance.GetGameFoundation.ItemCount);

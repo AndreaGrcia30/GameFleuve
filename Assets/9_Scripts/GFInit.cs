@@ -64,4 +64,18 @@ public class GFInit : MonoBehaviour
     public void AddItemDefinitionKeyToInventory(string item) => itemDefinitionKeys.Add(item);
     public List<InventoryItem> Items => items;
     public List<string> ItemDefinitionKeys => itemDefinitionKeys;
+
+    public void DeleteItem(InventoryItem item)
+    {
+        items.Remove(item);
+        itemDefinitionKeys.Remove(item.definition.key);
+        if(GameFoundationSdk.inventory.Delete(item))
+        {
+            Debug.Log("Item removed");
+        }
+        else
+        {
+            Debug.Log($"cant remove item: {item.id}");
+        }
+    }
 }
