@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Vida health;
     GameData gameData;
+    [SerializeField]
+    HealthBar healthBar;
 
     void Awake()
     {
