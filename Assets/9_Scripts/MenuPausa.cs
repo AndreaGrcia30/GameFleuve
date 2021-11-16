@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
+using GameLib.MemorySystem;
+
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField]
@@ -15,15 +18,25 @@ public class MenuPausa : MonoBehaviour
 
     [SerializeField]
     Button btnContinue;
+    [SerializeField]
+    Button btnSaveGame;
 
     bool animatorIsRunning = false;
 
     bool CancelButton => Input.GetButton("Cancel");
 
+     void Start() 
+     {
+        // MemorySystem.NewGame("juegoperron");
+        //MemorySystem.LoadGame("gamedata");
+        //MemorySystem.SaveGame(new GameData(GameManager.instance.GetHealth.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+    }
+
     void Awake()
     {
         pauseMenuAnim = pauseMenu.GetComponent<Animator>();
         btnContinue.onClick.AddListener(AnimateMenu);
+        btnSaveGame.onClick.AddListener(SaveGame);
     }
 
     void Update()
@@ -32,6 +45,12 @@ public class MenuPausa : MonoBehaviour
         {
             AnimateMenu();
         }
+    }
+
+    void SaveGame()
+    {
+        MemorySystem.SaveGame(new GameData(GameManager.instance.GetHealth.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+        AnimateMenu();
     }
 
     void AnimateMenu()
@@ -65,7 +84,8 @@ public class MenuPausa : MonoBehaviour
         animatorIsRunning = false;
         pauseMenu.SetActive(false);
     }
-
+    public static FileInfo[] FilePaths => new DirectoryInfo(Application.persistentDataPath + "/").GetFiles("*.data*");
+   
 }
 
 
