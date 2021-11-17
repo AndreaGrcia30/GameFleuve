@@ -32,22 +32,8 @@ public class GFInit : MonoBehaviour
     void OnInitSucceeded()
     {
         Debug.Log("Game Foundation is successfully initialized");
-        const string itemName = "sandwich";
-        InventoryItemDefinition itemDefiniton = GetItem(itemName);
-
-        /*Debug.Log($"Name: {itemDefiniton.displayName}, Key: {itemDefiniton.key}");
-
-        InventoryItem itemSandwich = CreateItem(itemDefiniton);
-
-        Debug.Log($"Item {itemSandwich.id} of definition '{itemSandwich.definition.key}' created");
-
-        const string propertyKey = "health";
-
-        Property helthProperty = itemDefiniton.GetStaticProperty(propertyKey);
-
-        Debug.Log($"{itemSandwich.definition.displayName} health: {helthProperty.AsString()}");*/
-
-        //Debug.Log(GameFoundationSdk.inventory.GetItems());
+        /*const string itemName = "sandwich";
+        InventoryItemDefinition itemDefiniton = GetItem(itemName);*/
     }
 
 
@@ -69,13 +55,14 @@ public class GFInit : MonoBehaviour
     {
         items.Remove(item);
         itemDefinitionKeys.Remove(item.definition.key);
-        if(GameFoundationSdk.inventory.Delete(item))
-        {
-            Debug.Log("Item removed");
-        }
-        else
-        {
-            Debug.Log($"cant remove item: {item.id}");
-        }
+    }
+
+    public InventoryItem GetItemById(string id) => GameFoundationSdk.inventory.FindItem(id);
+
+    public void Clear()
+    {
+        GameFoundationSdk.inventory.DeleteAllItems();
+        items.Clear();
+        itemDefinitionKeys.Clear();
     }
 }

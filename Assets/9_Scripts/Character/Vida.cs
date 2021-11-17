@@ -11,7 +11,7 @@ public class Vida : MonoBehaviour
     public void Start()
     {
         currentHealth = maxVida;
-        healthBar.SetMaxHealth(maxVida);
+        GameManager.instance.GetHealthBar.SetMaxHealth(maxVida);
     }
     public void Update()
     {
