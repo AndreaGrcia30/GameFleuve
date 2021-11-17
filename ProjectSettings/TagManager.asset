@@ -6,6 +6,7 @@ TagManager:
   tags:
   - sandwich
   - inventory
+  - Combat
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3762737433
+    locked: 0
+  - name: trees
+    uniqueID: 3108036531
     locked: 0
