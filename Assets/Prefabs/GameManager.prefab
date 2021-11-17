@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed2e0da91734c16449e60fdddb5ecc39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySystem: {fileID: 0}
   gf: {fileID: 2598684419114111235}
   health: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!1 &2598684419114111237
 GameObject:
   m_ObjectHideFlags: 0

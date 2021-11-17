@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 1910391547432956871}
   m_Layer: 5
   m_Name: InventoryUI
-  m_TagString: Untagged
+  m_TagString: inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1514,7 +1514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f952e08089d4444a2f23103b44ec53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySystem: {fileID: 1910391547384085164}
+  healthBar: {fileID: 2192665459876251976}
+  inventorySystem: {fileID: 1910391547384085160}
 --- !u!1 &1910391547441059005
 GameObject:
   m_ObjectHideFlags: 0

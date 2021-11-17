@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField]
+    InventoryUIController inventoryUIController;
     InventorySystem inventorySystem;
     [SerializeField]
     GFInit gf;
@@ -28,20 +28,32 @@ public class GameManager : MonoBehaviour
         }
     }
     //en que nivel estoy??
-    void OnLevelWasLoaded(int level) 
+    void OnLevelWasLoaded(int level)
     {
+        Debug.Log("hello level");
         if (InGameplay(level))
         {
-            inventorySystem = GameObject.FindWithTag("inventory").GetComponent<InventorySystem>();
+            inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
+            inventorySystem = inventoryUIController.GetInventorySystem;
+            healthBar = inventoryUIController.GetHealthBar;
             health = GameObject.FindWithTag("Player").GetComponent<Vida>();
         }
         
     }
 
-    bool InGameplay(int level) => level > 13 && level < 5;
+    public void LoadGamplayStuffs()
+    {
+        inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
+        inventorySystem = inventoryUIController.GetInventorySystem;
+        healthBar = inventoryUIController.GetHealthBar;
+        health = GameObject.FindWithTag("Player").GetComponent<Vida>();
+    }
+
+    bool InGameplay(int level) => level > 0 && level < 3;
 
     public GFInit GetGameFoundation => gf;
     public InventorySystem GetInventorySystem => inventorySystem;
     public Vida GetHealth => health;
     public GameData CurrentGameData{get => gameData; set => gameData = value;}
+    public HealthBar GetHealthBar => healthBar;
 }
