@@ -25,12 +25,13 @@ namespace GameLib.MemorySystem
         string json = GetJsonFromFile(savePath);
 
         GameManager.instance.CurrentGameData = GetGameDataFromJson(json);
+        GameManager.instance.GetGameFoundation.Clear();
         foreach(string itemDefiniton in GameManager.instance.CurrentGameData.Items)
         {
-            InventoryItemDefinition definition = GameManager.instance.GetGameFoundation.GetItem(itemDefiniton);
-            InventoryItem item = GameManager.instance.GetGameFoundation.CreateItem(definition);
-            GameManager.instance.GetGameFoundation.AddItemToInventory(item);
-            GameManager.instance.GetGameFoundation.AddItemDefinitionKeyToInventory(itemDefiniton);
+          InventoryItemDefinition definition = GameManager.instance.GetGameFoundation.GetItem(itemDefiniton);
+          InventoryItem item = GameManager.instance.GetGameFoundation.CreateItem(definition);
+          GameManager.instance.GetGameFoundation.AddItemToInventory(item);
+          GameManager.instance.GetGameFoundation.AddItemDefinitionKeyToInventory(itemDefiniton);
         }
       }
     }

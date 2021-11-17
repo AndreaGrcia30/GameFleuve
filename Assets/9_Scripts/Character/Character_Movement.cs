@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.GameFoundation;
 using System.IO;
 using GameLib.MemorySystem;
+using UnityEngine.SceneManagement;
 
 public class Character_Movement : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Character_Movement : MonoBehaviour
     Vida health;
 
     string savePath;
+    [SerializeField]
+    float safeProbability = 70;
 
     void Awake()
     {
@@ -22,7 +25,7 @@ public class Character_Movement : MonoBehaviour
 
     void Start()
     {
-        //MemorySystem.NewGame("juegoperron");
+        GameManager.instance.LoadGamplayStuffs();
         MemorySystem.LoadGame("gamedata");
     }
 
@@ -36,10 +39,14 @@ public class Character_Movement : MonoBehaviour
         if(!isTalking)
         {
             anim.SetFloat("magnitude", Axis.magnitude);
-            if(Axis.normalized.magnitude != 0)
+            if(IsWalking)
             {
                 anim.SetFloat("axisX", Axis.normalized.x);
                 anim.SetFloat("axisY", Axis.normalized.y);
+            }
+            if(Attack)
+            {
+                anim.SetTrigger("Attack");
             }
         }
     }
@@ -52,6 +59,12 @@ public class Character_Movement : MonoBehaviour
     Vector2 Axis => new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
     public bool IsTalking{get => isTalking; set => isTalking = value;}
+
+    public bool Attack => Input.GetButtonDown("Attack");
+
+    bool IsWalking => Axis.normalized.magnitude != 0;
+
+    float RandomReuslt => Random.Range(0, 100);
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -75,6 +88,25 @@ public class Character_Movement : MonoBehaviour
             }*/
             Destroy(other.gameObject);
             //MemorySystem.SaveGame(new GameData(health.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.CompareTag("wildarea"))
+        {
+            if(!isTalking && IsWalking)
+            {
+                if(RandomReuslt > safeProbability)
+                {
+                    Debug.Log("combat");
+                    SceneManager.LoadScene("Battle", LoadSceneMode.Single);
+                }
+                else
+                {
+                    Debug.Log("safe");
+                }
+            }
         }
     }
 }
