@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     GameData gameData;
     [SerializeField]
     HealthBar healthBar;
+    RiverFight riverFight;
 
     void Awake()
     {
@@ -33,20 +35,30 @@ public class GameManager : MonoBehaviour
         Debug.Log("hello level");
         if (InGameplay(level))
         {
-            inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
-            inventorySystem = inventoryUIController.GetInventorySystem;
-            healthBar = inventoryUIController.GetHealthBar;
-            health = GameObject.FindWithTag("Player").GetComponent<Vida>();
+            LoadGamplayStuffs();
         }
-        
     }
 
     public void LoadGamplayStuffs()
     {
-        inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
-        inventorySystem = inventoryUIController.GetInventorySystem;
-        healthBar = inventoryUIController.GetHealthBar;
+        Debug.Log(SceneManager.GetActiveScene().name);
         health = GameObject.FindWithTag("Player").GetComponent<Vida>();
+
+        if(SceneManager.GetActiveScene().name == "Battle")
+        {
+            //inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
+            //inventorySystem = inventoryUIController.GetInventorySystem;
+            healthBar = GameObject.FindWithTag("health").GetComponent<HealthBar>();
+            riverFight = GameObject.FindWithTag("Player").GetComponent<RiverFight>();
+
+        }
+        else
+        {
+            inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
+            inventorySystem = inventoryUIController.GetInventorySystem;
+            healthBar = inventoryUIController.GetHealthBar;
+        }
+        healthBar.SetMaxHealth(health.MaxHealth);
     }
 
     bool InGameplay(int level) => level > 0 && level < 3;
@@ -56,4 +68,5 @@ public class GameManager : MonoBehaviour
     public Vida GetHealth => health;
     public GameData CurrentGameData{get => gameData; set => gameData = value;}
     public HealthBar GetHealthBar => healthBar;
+    public RiverFight GetRiverFight => riverFight;
 }

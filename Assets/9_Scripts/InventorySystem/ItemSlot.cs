@@ -62,6 +62,7 @@ public class ItemSlot : MonoBehaviour
             case "sandwich":
                 Property property = GameManager.instance.GetGameFoundation.GetStaticProperty(definition, "health");
                 Debug.Log($"jugador se cura: {property} puntos de salud");
+                
                 break;
             case "knife":
                 //Property property = GameManager.instance.GetGameFoundation.GetStaticProperty(definition, "health");

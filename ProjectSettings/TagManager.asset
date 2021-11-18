@@ -8,6 +8,8 @@ TagManager:
   - inventory
   - Combat
   - wildarea
+  - health
+  - Enemy
   layers:
   - Default
   - TransparentFX

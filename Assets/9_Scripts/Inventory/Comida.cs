@@ -32,7 +32,7 @@ public class Comida : MonoBehaviour
         Vida vida = thePlayer.GetComponent<Vida>();
         vida.CurrentHealth += heal;
         Debug.Log("vidaActual" + vida.CurrentHealth);
-        vida.HealthBar.SetHealth(vida.CurrentHealth);
+        GameManager.instance.GetHealthBar.SetHealth(vida.CurrentHealth);
     }
 
 }
