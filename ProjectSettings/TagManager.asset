@@ -45,8 +45,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: walls
-    uniqueID: 2172143197
+  - name: ground
+    uniqueID: 370234737
     locked: 0
   - name: Props
     uniqueID: 128096285
@@ -54,6 +54,12 @@ TagManager:
   - name: Player
     uniqueID: 3762737433
     locked: 0
-  - name: trees
+  - name: walls
+    uniqueID: 2172143197
+    locked: 0
+  - name: treesbehind
     uniqueID: 3108036531
+    locked: 0
+  - name: trees
+    uniqueID: 24664691
     locked: 0
