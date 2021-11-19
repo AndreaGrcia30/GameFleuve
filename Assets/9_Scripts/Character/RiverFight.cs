@@ -2,21 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RiverFight : MonoBehaviour
+public class RiverFight : BattleActor
 {
     [SerializeField]
     VCamController vcamController;
-    Animator anim;
-
     Vida health;
 
-    bool diying = false;
-    [SerializeField]
-    int damage = 10;
-
-    void Awake()
+    new void Awake()
     {
-        anim = GetComponent<Animator>();
+        base.Awake();
         health = GetComponent<Vida>();
     }
 

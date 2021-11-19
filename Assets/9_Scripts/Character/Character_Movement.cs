@@ -27,6 +27,7 @@ public class Character_Movement : MonoBehaviour
     {
         GameManager.instance.LoadGamplayStuffs();
         MemorySystem.LoadGame("gamedata");
+        transform.position = GameManager.instance.CurrentGameData.Position;
     }
 
     void Update()
@@ -100,6 +101,7 @@ public class Character_Movement : MonoBehaviour
                 if(RandomReuslt > safeProbability)
                 {
                     Debug.Log("combat");
+                    GameManager.instance.LastSceneName = SceneManager.GetActiveScene().name;
                     SceneManager.LoadScene("Battle", LoadSceneMode.Single);
                 }
                 else

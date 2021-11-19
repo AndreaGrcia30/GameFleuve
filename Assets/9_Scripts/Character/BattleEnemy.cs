@@ -1,26 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class BattleEnemy : MonoBehaviour
+public class BattleEnemy : BattleActor
 {
     [SerializeField, Range(1, 100)]
-    int damage = 10;
-    [SerializeField, Range(1, 100)]
     int health = 30;
-    bool diying = false;
 
-    Animator anim;
-
-    void Awake()
-    {
-        anim = GetComponent<Animator>();
-    }
 
     void MakeDamage()
     {
         GameManager.instance.GetHealth.TakeDamage(damage);
         GameManager.instance.GetRiverFight.GetDamage();
+        GameManager.instance.UpdateHealthInCurrentData();
     }
 
     void Update()
@@ -31,9 +24,21 @@ public class BattleEnemy : MonoBehaviour
             {
                 diying = true;
                 anim.SetTrigger("Dead");
+                SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
             }
             return;
         }
+
+        //if(BattleManager.instance.IsPlayerTurn) return;
+
+        //logic
+    }
+
+    public void Attack() => anim.SetTrigger("Attack");
+    public void CheckEnemyTurn()
+    {
+        ChangeTurn();
+        BattleManager.instance.CheckForEnemyTurn();
     }
 
     public void GetDamage(int damage) => health = health - damage > 0 ? health - damage : 0;

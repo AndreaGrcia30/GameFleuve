@@ -12,10 +12,11 @@ public class GameManager : MonoBehaviour
     GFInit gf;
     [SerializeField]
     Vida health;
-    GameData gameData;
+    GameData gameData = new GameData();
     [SerializeField]
     HealthBar healthBar;
     RiverFight riverFight;
+    string lastSceneName;
 
     void Awake()
     {
@@ -41,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadGamplayStuffs()
     {
-        Debug.Log(SceneManager.GetActiveScene().name);
+        //Debug.Log(SceneManager.GetActiveScene().name);
         health = GameObject.FindWithTag("Player").GetComponent<Vida>();
 
         if(SceneManager.GetActiveScene().name == "Battle")
@@ -69,4 +70,7 @@ public class GameManager : MonoBehaviour
     public GameData CurrentGameData{get => gameData; set => gameData = value;}
     public HealthBar GetHealthBar => healthBar;
     public RiverFight GetRiverFight => riverFight;
+    public string LastSceneName{get => lastSceneName; set => lastSceneName = value;}
+    public void UpdateItemsInCurrentData() => CurrentGameData.Items = GetGameFoundation.ItemDefinitionKeys.ToArray();
+    public void UpdateHealthInCurrentData() => CurrentGameData.CurrentPlayerHealth = GetHealth.CurrentHealth;
 }

@@ -49,7 +49,7 @@ public class MenuPausa : MonoBehaviour
 
     void SaveGame()
     {
-        MemorySystem.SaveGame(new GameData(GameManager.instance.GetHealth.CurrentHealth, 1, GameManager.instance.GetGameFoundation.ItemDefinitionKeys.ToArray()), "gamedata");
+        MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
         AnimateMenu();
     }
 

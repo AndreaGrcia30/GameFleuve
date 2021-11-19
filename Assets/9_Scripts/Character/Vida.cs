@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
-    private int maxVida = 100;
-    private int currentHealth;
+    [SerializeField]
+    int maxVida = 100;
+    [SerializeField]
+    int currentHealth;
 
     public void Start()
     {
@@ -24,6 +26,7 @@ public class Vida : MonoBehaviour
     {
         currentHealth -= damage;
         GameManager.instance.GetHealthBar.SetHealth(currentHealth);
+        GameManager.instance.UpdateHealthInCurrentData();
     }
 
     public int CurrentHealth {get => currentHealth; set => currentHealth = value > 0 ? value : 0;}

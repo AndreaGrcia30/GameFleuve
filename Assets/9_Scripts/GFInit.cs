@@ -47,7 +47,11 @@ public class GFInit : MonoBehaviour
     public Property GetStaticProperty(InventoryItemDefinition itemDefiniton, string propertyKey) => itemDefiniton.GetStaticProperty(propertyKey);
     public int ItemCount => GameFoundationSdk.inventory.GetItems();
     public void AddItemToInventory(InventoryItem item) => items.Add(item);
-    public void AddItemDefinitionKeyToInventory(string item) => itemDefinitionKeys.Add(item);
+    public void AddItemDefinitionKeyToInventory(string item)
+    {
+        itemDefinitionKeys.Add(item);
+        GameManager.instance.UpdateItemsInCurrentData();
+    }
     public List<InventoryItem> Items => items;
     public List<string> ItemDefinitionKeys => itemDefinitionKeys;
 
@@ -55,6 +59,7 @@ public class GFInit : MonoBehaviour
     {
         items.Remove(item);
         itemDefinitionKeys.Remove(item.definition.key);
+        GameManager.instance.UpdateItemsInCurrentData();
     }
 
     public InventoryItem GetItemById(string id) => GameFoundationSdk.inventory.FindItem(id);

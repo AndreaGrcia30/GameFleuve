@@ -6,11 +6,12 @@ public class BattleManager : MonoBehaviour
 {
     RiverFight riverFight;
     BattleEnemy battleEnemy;
-    bool RiverTurn;
-    bool EnemyTurn;
+    [SerializeField]
+    bool isPlayerTurn = true;
     [SerializeField]
     GameObject Enemygameobject;
-
+    [SerializeField]
+    List<GameObject> enemies = new List<GameObject>();
     public static BattleManager instance;
 
     void Awake()
@@ -21,27 +22,31 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(Enemygameobject, transform.position, transform.rotation);
-        RiverTurn=true;
-        EnemyTurn=false;
-
+        Enemygameobject = enemies[Random.Range(0, enemies.Count - 1)];
         riverFight = GameObject.FindWithTag("Player").GetComponent<RiverFight>();
-        battleEnemy = GameObject.FindWithTag("Enemy").GetComponent<BattleEnemy>();
-
+        battleEnemy = Instantiate(Enemygameobject, new Vector2(-riverFight.transform.position.x, riverFight.transform.position.y),
+        transform.rotation).GetComponent<BattleEnemy>();
+        CheckForEnemyTurn();
     }
 
-    public void ChangeTurn()
+    public void CheckForEnemyTurn() => StartCoroutine(CheckForEnemyTurnCorutine());
+
+    IEnumerator CheckForEnemyTurnCorutine()
     {
-        if(RiverTurn==true){
-            RiverTurn=false;
-            EnemyTurn=true;
-        }
-        else {
-            RiverTurn=true;
-            EnemyTurn=false;
+        while (true)
+        {
+            if(!IsPlayerTurn)
+            {
+                GetBattleEnemy.Attack();
+                break;
+            }
+            yield return null;
         }
     }
 
     public RiverFight GetRiverFight => riverFight;
     public BattleEnemy GetBattleEnemy => battleEnemy;
+    public bool IsPlayerTurn{get => isPlayerTurn; set => isPlayerTurn = value;}
+    public void ChangeTurn() => IsPlayerTurn = !IsPlayerTurn;
+
 }

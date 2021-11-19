@@ -16,7 +16,7 @@ public class BattleUIController : MonoBehaviour
 
     public void Attack()
     {
-        BattleManager.instance.GetRiverFight.Attack();
+        if(BattleManager.instance.IsPlayerTurn) BattleManager.instance.GetRiverFight.Attack();
     }
 
     // Update is called once per frame
