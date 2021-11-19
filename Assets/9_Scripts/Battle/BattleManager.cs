@@ -6,6 +6,10 @@ public class BattleManager : MonoBehaviour
 {
     RiverFight riverFight;
     BattleEnemy battleEnemy;
+    bool RiverTurn;
+    bool EnemyTurn;
+    [SerializeField]
+    GameObject Enemygameobject;
 
     public static BattleManager instance;
 
@@ -17,11 +21,25 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Instantiante(Enemygameobject, position, rotation);
+        Instantiate(Enemygameobject, transform.position, transform.rotation);
+        RiverTurn=true;
+        EnemyTurn=false;
 
         riverFight = GameObject.FindWithTag("Player").GetComponent<RiverFight>();
         battleEnemy = GameObject.FindWithTag("Enemy").GetComponent<BattleEnemy>();
 
+    }
+
+    public void ChangeTurn()
+    {
+        if(RiverTurn==true){
+            RiverTurn=false;
+            EnemyTurn=true;
+        }
+        else {
+            RiverTurn=true;
+            EnemyTurn=false;
+        }
     }
 
     public RiverFight GetRiverFight => riverFight;

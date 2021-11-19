@@ -135,6 +135,10 @@ PrefabInstance:
       value: MobSword
       objectReference: {fileID: 0}
     - target: {fileID: 8915450727028818537, guid: 9b8e26597ff661547b3939153772e88c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915450727028818537, guid: 9b8e26597ff661547b3939153772e88c, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -2388,6 +2392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bef1364028fa644aafe9069a904649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enemygameobject: {fileID: 132723221}
 --- !u!1 &1715755301
 GameObject:
   m_ObjectHideFlags: 0
