@@ -26,7 +26,14 @@ public class Character_Movement : MonoBehaviour
     void Start()
     {
         GameManager.instance.LoadGamplayStuffs();
-        MemorySystem.LoadGame("gamedata");
+        if(!MemorySystem.LoadGame("gamedata"))
+        {
+            MemorySystem.NewGame("gamedata");
+        }
+        /*if(GameManager.instance.LastSceneName != "Battle")
+        {
+            
+        }*/
         transform.position = GameManager.instance.CurrentGameData.Position;
     }
 
@@ -55,6 +62,7 @@ public class Character_Movement : MonoBehaviour
     void Move()
     {
         transform.Translate(Axis.normalized * speed * Time.deltaTime);
+         GameManager.instance.CurrentGameData.SetPosition(transform.position);
     }
 
     Vector2 Axis => new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -102,6 +110,7 @@ public class Character_Movement : MonoBehaviour
                 {
                     Debug.Log("combat");
                     GameManager.instance.LastSceneName = SceneManager.GetActiveScene().name;
+                    MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
                     SceneManager.LoadScene("Battle", LoadSceneMode.Single);
                 }
                 else

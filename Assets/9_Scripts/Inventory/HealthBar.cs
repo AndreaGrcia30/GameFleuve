@@ -16,6 +16,11 @@ public class HealthBar : MonoBehaviour
         slider = GetComponent<Slider>();
     }
 
+    void Start()
+    {
+        SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
+    }
+
     public void SetHealth(int health)
     {
         slider.value = health;

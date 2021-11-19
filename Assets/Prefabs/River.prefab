@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 2434176413752870379}
+  safeProbability: 70
 --- !u!50 &2434176413752870370
 Rigidbody2D:
   serializedVersion: 4
@@ -303,7 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe03903dd87997c48b49ed535ce2c4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
+  maxVida: 100
+  currentHealth: 0
 --- !u!95 &2434176413752870373
 Animator:
   serializedVersion: 3

@@ -17,6 +17,7 @@ public class RiverFight : BattleActor
     void Start()
     {
         GameManager.instance.LoadGamplayStuffs();
+        //GameManager.instance.LastSceneName = "Battle";
     }
 
     void Update()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GameLib.MemorySystem;
 
 public class BattleEnemy : BattleActor
 {
@@ -24,6 +25,7 @@ public class BattleEnemy : BattleActor
             {
                 diying = true;
                 anim.SetTrigger("Dead");
+                MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
                 SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
             }
             return;
