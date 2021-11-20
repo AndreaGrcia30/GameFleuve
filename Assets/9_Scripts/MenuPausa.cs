@@ -61,6 +61,7 @@ public class MenuPausa : MonoBehaviour
         string GameName = "LastGame" + System.DateTime.Now.ToString("hh:mm");
         Debug.Log(GameName);
         MemorySystem.NewGame(GameName);
+        MemorySystem.NewGame("gamedata");
         AnimateMenu();
     }
 
