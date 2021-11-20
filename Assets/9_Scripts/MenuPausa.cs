@@ -20,6 +20,8 @@ public class MenuPausa : MonoBehaviour
     Button btnContinue;
     [SerializeField]
     Button btnSaveGame;
+    [SerializeField]
+    Button btnNewGame;
 
     bool animatorIsRunning = false;
 
@@ -37,6 +39,7 @@ public class MenuPausa : MonoBehaviour
         pauseMenuAnim = pauseMenu.GetComponent<Animator>();
         btnContinue.onClick.AddListener(AnimateMenu);
         btnSaveGame.onClick.AddListener(SaveGame);
+        btnNewGame.onClick.AddListener(NewGame);
     }
 
     void Update()
@@ -50,6 +53,14 @@ public class MenuPausa : MonoBehaviour
     void SaveGame()
     {
         MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
+        AnimateMenu();
+    }
+
+    void NewGame()
+    {
+        string GameName = "LastGame" + System.DateTime.Now.ToString("hh:mm");
+        Debug.Log(GameName);
+        MemorySystem.NewGame(GameName);
         AnimateMenu();
     }
 
