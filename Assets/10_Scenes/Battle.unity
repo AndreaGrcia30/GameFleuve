@@ -2314,6 +2314,9 @@ MonoBehaviour:
   Enemygameobject: {fileID: 0}
   enemies:
   - {fileID: 8915450727028818537, guid: 9b8e26597ff661547b3939153772e88c, type: 3}
+  - {fileID: 934012963203670337, guid: b83e814fdc8cd4b45a553e2b5392351d, type: 3}
+  - {fileID: 1736225178558855525, guid: 61f1859f5867a3f49812ce0bcf8871f8, type: 3}
+  - {fileID: 8862235801547777349, guid: a93911908aeb24440972730dc67bf534, type: 3}
 --- !u!1 &1715755301
 GameObject:
   m_ObjectHideFlags: 0
