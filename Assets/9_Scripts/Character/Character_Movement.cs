@@ -23,13 +23,15 @@ public class Character_Movement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Start()
+    void OnEnable()
     {
         GameManager.instance.LoadGamplayStuffs();
+        
         if(!MemorySystem.LoadGame("gamedata"))
         {
             MemorySystem.NewGame("gamedata");
         }
+        Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
         /*if(GameManager.instance.LastSceneName != "Battle")
         {
             

@@ -11,15 +11,15 @@ public class Vida : MonoBehaviour
 
     public void Start()
     {
-        currentHealth = maxVida;
-        //GameManager.instance.GetHealthBar.SetMaxHealth(maxVida);
+        currentHealth =  GameManager.instance.CurrentGameData.CurrentPlayerHealth;
+        GameManager.instance.GetHealthBar.SetMaxHealth(maxVida);
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        /*if (Input.GetKeyDown(KeyCode.R))
         {
             TakeDamage(20);
-        }
+        }*/
         //quitar el if y reemplazarlo para el sistema de combate
     }
     public void TakeDamage(int damage)
@@ -27,6 +27,7 @@ public class Vida : MonoBehaviour
         currentHealth -= damage;
         GameManager.instance.GetHealthBar.SetHealth(currentHealth);
         GameManager.instance.UpdateHealthInCurrentData();
+        Debug.Log(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
     }
 
     public int CurrentHealth {get => currentHealth; set => currentHealth = value > 0 ? value : 0;}

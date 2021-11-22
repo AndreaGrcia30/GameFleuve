@@ -12,8 +12,9 @@ public class GFInit : MonoBehaviour
     List<InventoryItem> items = new List<InventoryItem>();
     List<string> itemDefinitionKeys = new List<string>();
 
+    public void Init() => StartCoroutine(StartGF());
 
-    IEnumerator Start()
+    IEnumerator StartGF()
     {
         MemoryDataLayer dataLayer = new MemoryDataLayer();
 
