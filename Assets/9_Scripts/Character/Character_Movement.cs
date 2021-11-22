@@ -31,7 +31,7 @@ public class Character_Movement : MonoBehaviour
         {
             MemorySystem.NewGame("gamedata");
         }
-        Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
+        
         /*if(GameManager.instance.LastSceneName != "Battle")
         {
             

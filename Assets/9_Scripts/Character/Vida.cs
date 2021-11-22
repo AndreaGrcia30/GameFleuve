@@ -13,6 +13,7 @@ public class Vida : MonoBehaviour
     {
         currentHealth =  GameManager.instance.CurrentGameData.CurrentPlayerHealth;
         GameManager.instance.GetHealthBar.SetMaxHealth(maxVida);
+        GameManager.instance.GetHealthBar.SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
     }
     public void Update()
     {
@@ -27,7 +28,7 @@ public class Vida : MonoBehaviour
         currentHealth -= damage;
         GameManager.instance.GetHealthBar.SetHealth(currentHealth);
         GameManager.instance.UpdateHealthInCurrentData();
-        Debug.Log(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
+        //Debug.Log(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
     }
 
     public int CurrentHealth {get => currentHealth; set => currentHealth = value > 0 ? value : 0;}
