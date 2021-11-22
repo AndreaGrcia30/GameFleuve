@@ -638,6 +638,7 @@ GameObject:
   - component: {fileID: 336874159}
   - component: {fileID: 336874158}
   - component: {fileID: 336874157}
+  - component: {fileID: 336874160}
   m_Layer: 0
   m_Name: MobShield
   m_TagString: Untagged
@@ -729,6 +730,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336874160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336874156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dcf7bf2327a3b4882f82bebaae5d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  health: 30
 --- !u!1 &345857424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1073,7 @@ GameObject:
   - component: {fileID: 444834804}
   - component: {fileID: 444834803}
   - component: {fileID: 444834802}
+  - component: {fileID: 444834805}
   m_Layer: 0
   m_Name: MobSpear
   m_TagString: Untagged
@@ -1149,6 +1165,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &444834805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444834801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dcf7bf2327a3b4882f82bebaae5d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  health: 30
 --- !u!1 &471137368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +1906,7 @@ GameObject:
   - component: {fileID: 1037119326}
   - component: {fileID: 1037119325}
   - component: {fileID: 1037119324}
+  - component: {fileID: 1037119327}
   m_Layer: 0
   m_Name: MobSword
   m_TagString: Untagged
@@ -1967,6 +1998,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037119327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037119323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dcf7bf2327a3b4882f82bebaae5d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  health: 30
 --- !u!1 &1073683945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3147,7 @@ GameObject:
   - component: {fileID: 1720511012}
   - component: {fileID: 1720511011}
   - component: {fileID: 1720511010}
+  - component: {fileID: 1720511013}
   m_Layer: 0
   m_Name: MobArcher
   m_TagString: Untagged
@@ -3193,6 +3239,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1720511013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720511009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dcf7bf2327a3b4882f82bebaae5d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  health: 30
 --- !u!1 &1739578593
 GameObject:
   m_ObjectHideFlags: 0
