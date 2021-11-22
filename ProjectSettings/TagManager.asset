@@ -62,6 +62,9 @@ TagManager:
   - name: treesbehind
     uniqueID: 3108036531
     locked: 0
+  - name: Items
+    uniqueID: 730743803
+    locked: 0
   - name: trees
     uniqueID: 24664691
     locked: 0
