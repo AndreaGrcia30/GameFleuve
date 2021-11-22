@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 4f8d1a8e5aef748a7be73d656177f069
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4991156441029238703
+    second: mobs hadas_0
+  - first:
+      213: 2852410349749212550
+    second: mobs hadas_1
+  - first:
+      213: 5973251836776716491
+    second: mobs hadas_2
+  - first:
+      213: 2698138045346838957
+    second: mobs hadas_3
+  - first:
+      213: -1573986293982663176
+    second: mobs hadas_4
+  - first:
+      213: 1088779531366895056
+    second: mobs hadas_5
+  - first:
+      213: 2124572571317750984
+    second: mobs hadas_6
+  - first:
+      213: -6700769493258045416
+    second: mobs hadas_7
+  - first:
+      213: 2028992571267666799
+    second: mobs hadas_8
+  - first:
+      213: 9082193826720779226
+    second: mobs hadas_9
+  - first:
+      213: -626925180539598173
+    second: mobs hadas_10
+  - first:
+      213: -5082632862813782833
+    second: mobs hadas_11
+  - first:
+      213: 2905550652092103638
+    second: mobs hadas_12
+  - first:
+      213: 2959778408584568208
+    second: mobs hadas_13
+  - first:
+      213: -2375546197317001807
+    second: mobs hadas_14
+  - first:
+      213: -9103609792677533165
+    second: mobs hadas_15
+  - first:
+      213: -8644717236992437974
+    second: mobs hadas_16
+  - first:
+      213: 4366108931904479981
+    second: mobs hadas_17
+  - first:
+      213: -8480583408290339575
+    second: mobs hadas_18
+  - first:
+      213: 6164202312849428158
+    second: mobs hadas_19
+  - first:
+      213: -3973397201508360847
+    second: mobs hadas_20
+  - first:
+      213: 834739622981689517
+    second: mobs hadas_21
+  - first:
+      213: -1729342677250610839
+    second: mobs hadas_22
+  - first:
+      213: 8636358571875940759
+    second: mobs hadas_23
+  - first:
+      213: -972039400637850090
+    second: mobs hadas_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mobs hadas_0
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1821
+        width: 315
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150ac0249a9dbbab0800000000000000
+      internalID: -4991156441029238703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_1
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1821
+        width: 300
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6851372b91cc59720800000000000000
+      internalID: 2852410349749212550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_2
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1821
+        width: 303
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8960dd5e045e250800000000000000
+      internalID: 5973251836776716491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_3
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 1822
+        width: 325
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da97dd3c146b17520800000000000000
+      internalID: 2698138045346838957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_4
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 1817
+        width: 331
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd64d11ec3182ae0800000000000000
+      internalID: -1573986293982663176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_5
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 2043
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd07d5173f1c1f00800000000000000
+      internalID: 1088779531366895056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_6
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 1820
+        width: 300
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cccee44f7ffb7d10800000000000000
+      internalID: 2124572571317750984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_7
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 1820
+        width: 325
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8187498e5a51203a0800000000000000
+      internalID: -6700769493258045416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_8
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 1821
+        width: 416
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63d0565efd682c10800000000000000
+      internalID: 2028992571267666799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_9
+      rect:
+        serializedVersion: 2
+        x: 4134
+        y: 1821
+        width: 242
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb00f67a2f6a0e70800000000000000
+      internalID: 9082193826720779226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_10
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 1821
+        width: 263
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa8031bed6bc47f0800000000000000
+      internalID: -626925180539598173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_11
+      rect:
+        serializedVersion: 2
+        x: 5046
+        y: 1808
+        width: 303
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccf148175cd679b0800000000000000
+      internalID: -5082632862813782833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_12
+      rect:
+        serializedVersion: 2
+        x: 5453
+        y: 1805
+        width: 352
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbbade7ce6925820800000000000000
+      internalID: 2905550652092103638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1368
+        width: 288
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ddd81f7ce331920800000000000000
+      internalID: 2959778408584568208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_14
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1369
+        width: 260
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdd369d15d580fd0800000000000000
+      internalID: -2375546197317001807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_15
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1368
+        width: 281
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a20b5602b79a180800000000000000
+      internalID: -9103609792677533165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_16
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 1367
+        width: 263
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a219e51897bc70880800000000000000
+      internalID: -8644717236992437974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_17
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 1367
+        width: 263
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2a3d0e0f8879c30800000000000000
+      internalID: 4366108931904479981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_18
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 1369
+        width: 297
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90568cc725aee4a80800000000000000
+      internalID: -8480583408290339575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_19
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 1367
+        width: 299
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe080d1855ab8550800000000000000
+      internalID: 6164202312849428158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_20
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 1368
+        width: 300
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d10941c48abd8c0800000000000000
+      internalID: -3973397201508360847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_21
+      rect:
+        serializedVersion: 2
+        x: 4143
+        y: 1370
+        width: 242
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da064c3b347959b00800000000000000
+      internalID: 834739622981689517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_22
+      rect:
+        serializedVersion: 2
+        x: 4575
+        y: 1368
+        width: 263
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969ed8b5ff32008e0800000000000000
+      internalID: -1729342677250610839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_23
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 1358
+        width: 306
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799b09d1d528ad770800000000000000
+      internalID: 8636358571875940759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobs hadas_24
+      rect:
+        serializedVersion: 2
+        x: 5441
+        y: 1358
+        width: 358
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e1c41b05f9282f0800000000000000
+      internalID: -972039400637850090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 959613f2c52bf4972bebb32bd8cdbb31
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
