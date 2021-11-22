@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - sandwich
+  - inventory
+  - Combat
+  - wildarea
+  - health
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -12,8 +18,8 @@ TagManager:
   - Water
   - UI
   - Camera
-  - 
-  - 
+  - Item
+  - Backround
   - 
   - 
   - 
@@ -41,12 +47,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: walls
-    uniqueID: 2172143197
+  - name: ground
+    uniqueID: 370234737
     locked: 0
   - name: Props
     uniqueID: 128096285
     locked: 0
   - name: Player
     uniqueID: 3762737433
+    locked: 0
+  - name: walls
+    uniqueID: 2172143197
+    locked: 0
+  - name: treesbehind
+    uniqueID: 3108036531
+    locked: 0
+  - name: trees
+    uniqueID: 24664691
     locked: 0
