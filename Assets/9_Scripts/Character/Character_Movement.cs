@@ -11,6 +11,7 @@ public class Character_Movement : MonoBehaviour
     bool isTalking = false;
     private float speed = 5.0f;
     private Animator anim;
+    SpriteRenderer spr;
     [SerializeField]
     Vida health;
 
@@ -18,23 +19,30 @@ public class Character_Movement : MonoBehaviour
     [SerializeField]
     float safeProbability = 70;
 
+    [SerializeField, Range(0.1f, 10f)]
+    float rayDistance = 5f;
+    [SerializeField]
+    Color rayColor = Color.yellow;
+    [SerializeField]
+    LayerMask detectionLayer;
+    [SerializeField]
+    Vector2 lastAxis;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
+        spr = GetComponent<SpriteRenderer>();
     }
 
     void OnEnable()
     {
         GameManager.instance.LoadGamplayStuffs();
-        
         if(!MemorySystem.LoadGame("gamedata"))
         {
             MemorySystem.NewGame("gamedata");
         }
-        
         /*if(GameManager.instance.LastSceneName != "Battle")
         {
-            
         }*/
         transform.position = GameManager.instance.CurrentGameData.Position;
     }
@@ -42,6 +50,20 @@ public class Character_Movement : MonoBehaviour
     void Update()
     {
         Move();
+        if(lastAxis.y < 0)
+        {
+            if(DownRay)
+            {
+                spr.sortingLayerName = "PlayerBehind";
+            }
+        }
+        if(lastAxis.y > 0)
+        {
+            if(UpRay)
+            {
+                spr.sortingLayerName = "PlayerOver";
+            }
+        }
     }
 
     void LateUpdate()
@@ -53,6 +75,7 @@ public class Character_Movement : MonoBehaviour
             {
                 anim.SetFloat("axisX", Axis.normalized.x);
                 anim.SetFloat("axisY", Axis.normalized.y);
+                lastAxis = new Vector2(Axis.normalized.x, Axis.normalized.y);
             }
             if(Attack)
             {
@@ -120,6 +143,22 @@ public class Character_Movement : MonoBehaviour
                     Debug.Log("safe");
                 }
             }
+        }
+    }
+
+    bool UpRay => Physics2D.Raycast(transform.position, Vector2.up, rayDistance, detectionLayer);
+    bool DownRay => Physics2D.Raycast(transform.position, Vector2.down, rayDistance, detectionLayer);
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = rayColor;
+        if(lastAxis.y > 0)
+        {
+            Gizmos.DrawRay(transform.position, Vector2.up * rayDistance);
+        }
+        if(lastAxis.y < 0)
+        {
+            Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
         }
     }
 }
