@@ -7,6 +7,7 @@ public class RiverFight : BattleActor
     [SerializeField]
     VCamController vcamController;
     Vida health;
+    public BattleManager battleManager;
 
     new void Awake()
     {
@@ -31,6 +32,7 @@ public class RiverFight : BattleActor
             {
                 diying = true;
                 anim.SetTrigger("Death");
+                battleManager.GameOver();
             }
             return;
         }
