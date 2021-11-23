@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: b5441cefdb4e04082ae7c69cc200aa22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8713954285794309420
+    second: Mobs plantas_0
+  - first:
+      213: -7294969951101948465
+    second: Mobs plantas_1
+  - first:
+      213: 752197191913956139
+    second: Mobs plantas_2
+  - first:
+      213: -331141257803134827
+    second: Mobs plantas_3
+  - first:
+      213: 2235874302591499923
+    second: Mobs plantas_4
+  - first:
+      213: -5364061593293063336
+    second: Mobs plantas_5
+  - first:
+      213: -2453146935069623979
+    second: Mobs plantas_6
+  - first:
+      213: 1608185988569894519
+    second: Mobs plantas_7
+  - first:
+      213: -1053732439132700167
+    second: Mobs plantas_8
+  - first:
+      213: -1345658082111768401
+    second: Mobs plantas_9
+  - first:
+      213: 930797331150104417
+    second: Mobs plantas_10
+  - first:
+      213: 2715827863833530570
+    second: Mobs plantas_11
+  - first:
+      213: -6518924404584715877
+    second: Mobs plantas_12
+  - first:
+      213: 1670126399329353247
+    second: Mobs plantas_13
+  - first:
+      213: -1035096190717565098
+    second: Mobs plantas_14
+  - first:
+      213: -8335082934979206070
+    second: Mobs plantas_15
+  - first:
+      213: 7566219091127790909
+    second: Mobs plantas_16
+  - first:
+      213: -165136119468887363
+    second: Mobs plantas_17
+  - first:
+      213: -8508163123587207669
+    second: Mobs plantas_18
+  - first:
+      213: -8439112431616357849
+    second: Mobs plantas_19
+  - first:
+      213: -851390178009267888
+    second: Mobs plantas_20
+  - first:
+      213: 4062073937823991898
+    second: Mobs plantas_21
+  - first:
+      213: 2180437117968718000
+    second: Mobs plantas_22
+  - first:
+      213: 6376944925446357103
+    second: Mobs plantas_23
+  - first:
+      213: 2659498584181959753
+    second: Mobs plantas_24
+  - first:
+      213: 7893906055988486969
+    second: Mobs plantas_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobs plantas_0
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 2375
+        width: 100
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dacc3edeb0d11780800000000000000
+      internalID: -8713954285794309420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_1
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 2377
+        width: 118
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd6b69da7f03ca90800000000000000
+      internalID: -7294969951101948465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_2
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 2377
+        width: 206
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23e3195c57507a00800000000000000
+      internalID: 752197191913956139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_3
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 2375
+        width: 206
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5980b2ec7cc876bf0800000000000000
+      internalID: -331141257803134827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_4
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 2375
+        width: 201
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ef36005db670f10800000000000000
+      internalID: 2235874302591499923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1946
+        width: 98
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b7372a6660f85b0800000000000000
+      internalID: -5364061593293063336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1945
+        width: 102
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55936512cdba4fdd0800000000000000
+      internalID: -2453146935069623979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_7
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1946
+        width: 103
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e0875d2ac615610800000000000000
+      internalID: 1608185988569894519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_8
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1944
+        width: 280
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f18035fde36061f0800000000000000
+      internalID: -1053732439132700167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1494
+        width: 99
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8389a9a13435de0800000000000000
+      internalID: -1345658082111768401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1494
+        width: 98
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1676519bd3bdaec00800000000000000
+      internalID: 930797331150104417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_11
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1494
+        width: 99
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0d7e69d0f80b520800000000000000
+      internalID: 2715827863833530570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_12
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1492
+        width: 98
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b996a13fac02885a0800000000000000
+      internalID: -6518924404584715877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1089
+        width: 248
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e370a8c1b7d2710800000000000000
+      internalID: 1670126399329353247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_14
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1088
+        width: 242
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6576bebaf7992a1f0800000000000000
+      internalID: -1035096190717565098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_15
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1087
+        width: 248
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44e4275b36d35c80800000000000000
+      internalID: -8335082934979206070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_16
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1088
+        width: 229
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d63730d2c900960800000000000000
+      internalID: 7566219091127790909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 608
+        width: 200
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db27873039155bdf0800000000000000
+      internalID: -165136119468887363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_18
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 608
+        width: 207
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ea18f97beece980800000000000000
+      internalID: -8508163123587207669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_19
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 612
+        width: 243
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a8ceda4ff32ea80800000000000000
+      internalID: -8439112431616357849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_20
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 608
+        width: 335
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051408ad4214f24f0800000000000000
+      internalID: -851390178009267888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_21
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 611
+        width: 347
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a580f5389b26f5830800000000000000
+      internalID: 4062073937823991898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_22
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 138
+        width: 200
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b81a9f9108724e10800000000000000
+      internalID: 2180437117968718000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_23
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 138
+        width: 266
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60c5798f957f7850800000000000000
+      internalID: 6376944925446357103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_24
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 256
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ce1d62fdf68e420800000000000000
+      internalID: 2659498584181959753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobs plantas_25
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 119
+        width: 364
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933af75fbb9cc8d60800000000000000
+      internalID: 7893906055988486969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d468145cc639747a5adf102a1029df9c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
