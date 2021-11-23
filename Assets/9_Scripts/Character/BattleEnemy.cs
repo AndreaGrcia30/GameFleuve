@@ -12,6 +12,7 @@ public class BattleEnemy : BattleActor
 
     void MakeDamage()
     {
+        if(RiverFight.Defend) return;
         GameManager.instance.GetHealth.TakeDamage(damage);
         GameManager.instance.GetRiverFight.GetDamage();
         //GameManager.instance.UpdateHealthInCurrentData();

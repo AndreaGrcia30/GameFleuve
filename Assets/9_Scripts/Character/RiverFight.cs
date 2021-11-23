@@ -57,5 +57,17 @@ public class RiverFight : BattleActor
         anim.SetTrigger("Attack");
     }
 
+    public void Defense()
+    {
+        if(ImDead){
+            Defend=false;
+            return;
+        } 
+        anim.SetTrigger("Defense");
+        Defend=true;
+
+    }
+
     bool ImDead => health.CurrentHealth == 0;
+    public static bool Defend;
 }
