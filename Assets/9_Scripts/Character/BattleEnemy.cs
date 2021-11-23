@@ -8,7 +8,6 @@ public class BattleEnemy : BattleActor
 {
     [SerializeField, Range(1, 100)]
     int health = 30;
-    public BattleManager battleManager;
 
 
     void MakeDamage()
@@ -27,7 +26,7 @@ public class BattleEnemy : BattleActor
                 diying = true;
                 anim.SetTrigger("Dead");
                 MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
-                battleManager.Win();
+                BattleManager.instance.Win();
             }
             return;
         }
