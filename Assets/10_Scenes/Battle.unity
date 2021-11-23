@@ -1681,7 +1681,7 @@ GameObject:
   - component: {fileID: 995637854}
   - component: {fileID: 995637853}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Battle UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2176,8 +2176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.29, y: -3.1513}
-  m_SizeDelta: {x: -450.22, y: 0}
+  m_AnchoredPosition: {x: 8.287811, y: -0.000022888184}
+  m_SizeDelta: {x: -450.22, y: -0.000045776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1202171352
 MonoBehaviour:
@@ -2433,8 +2433,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3.8432}
+  m_SizeDelta: {x: 0, y: 4.8857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452399987
 MonoBehaviour:
@@ -3542,7 +3542,7 @@ Transform:
   m_LocalScale: {x: 1.3119203, y: 1.3119203, z: 1.3119203}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1991906252
 GameObject:
