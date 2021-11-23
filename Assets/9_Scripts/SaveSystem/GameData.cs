@@ -12,7 +12,7 @@ public class GameData
   [SerializeField]
   float posY = 0;
   [SerializeField]
-  int currentPlayerHealth = 4;
+  int currentPlayerHealth = 100;
   [SerializeField]
   int playerLevel = 1;
   [SerializeField]

@@ -48,5 +48,4 @@ public class BattleManager : MonoBehaviour
     public BattleEnemy GetBattleEnemy => battleEnemy;
     public bool IsPlayerTurn{get => isPlayerTurn; set => isPlayerTurn = value;}
     public void ChangeTurn() => IsPlayerTurn = !IsPlayerTurn;
-
 }

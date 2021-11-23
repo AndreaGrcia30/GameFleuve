@@ -14,9 +14,12 @@ public class RiverFight : BattleActor
         health = GetComponent<Vida>();
     }
 
-    void Start()
+    void OnEnable()
     {
         GameManager.instance.LoadGamplayStuffs();
+        Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
+        //GameManager.instance.GetHealthBar.SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
+        //Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
         //GameManager.instance.LastSceneName = "Battle";
     }
 

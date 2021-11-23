@@ -18,8 +18,11 @@ public class HealthBar : MonoBehaviour
 
     void Start()
     {
-        SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
+        //Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
+        //SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
     }
+
+    //void OnLevelWasLoaded(int level) => SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
 
     public void SetHealth(int health)
     {

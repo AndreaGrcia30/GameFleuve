@@ -19,7 +19,7 @@ TagManager:
   - UI
   - Camera
   - Item
-  - Backround
+  - Player
   - 
   - 
   - 
@@ -53,7 +53,7 @@ TagManager:
   - name: Props
     uniqueID: 128096285
     locked: 0
-  - name: Player
+  - name: PlayerBehind
     uniqueID: 3762737433
     locked: 0
   - name: walls
@@ -67,4 +67,7 @@ TagManager:
     locked: 0
   - name: trees
     uniqueID: 24664691
+    locked: 0
+  - name: PlayerOver
+    uniqueID: 126689157
     locked: 0
