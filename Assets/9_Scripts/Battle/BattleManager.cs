@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class BattleManager : MonoBehaviour
 {
     RiverFight riverFight;
@@ -13,10 +14,21 @@ public class BattleManager : MonoBehaviour
     [SerializeField]
     List<GameObject> enemies = new List<GameObject>();
     public static BattleManager instance;
-
+    [SerializeField]
+    GameObject gameOverCanvas;
+    [SerializeField]
+    Button btnRetry;
+    [SerializeField]
+     GameObject WinCanvas;
+    [SerializeField]
+    Button btnContinue;
+    [SerializeField]
+    int maxVida = 100;
     void Awake()
     {
         instance = this;
+        btnRetry.onClick.AddListener(Retry);
+        btnContinue.onClick.AddListener(Continue);
     }
 
     // Start is called before the first frame update
@@ -27,6 +39,8 @@ public class BattleManager : MonoBehaviour
         battleEnemy = Instantiate(Enemygameobject, new Vector2(-riverFight.transform.position.x, riverFight.transform.position.y),
         transform.rotation).GetComponent<BattleEnemy>();
         CheckForEnemyTurn();
+        gameOverCanvas.SetActive(false);
+        WinCanvas.SetActive(false);
     }
 
     public void CheckForEnemyTurn() => StartCoroutine(CheckForEnemyTurnCorutine());
@@ -42,6 +56,25 @@ public class BattleManager : MonoBehaviour
             }
             yield return null;
         }
+    }
+
+    public void GameOver()
+    {
+        gameOverCanvas.SetActive(true);
+    }
+    public void Win()
+    {
+        WinCanvas.SetActive(true);
+    }
+
+    void Retry()
+    {
+        SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
+    }
+
+    void Continue()
+    {
+        SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
     }
 
     public RiverFight GetRiverFight => riverFight;
