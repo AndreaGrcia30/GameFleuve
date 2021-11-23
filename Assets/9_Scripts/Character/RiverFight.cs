@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RiverFight : BattleActor
 {
@@ -66,6 +67,17 @@ public class RiverFight : BattleActor
         anim.SetTrigger("Defense");
         Defend=true;
 
+    }
+
+    public void GiveUp()
+    {
+        if(ImDead) return;
+        battleManager.GameOver();
+    }
+    public void Run()
+    {
+        if(ImDead) return;
+        SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
     }
 
     bool ImDead => health.CurrentHealth == 0;
