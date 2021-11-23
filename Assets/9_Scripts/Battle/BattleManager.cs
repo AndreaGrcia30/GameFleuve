@@ -69,8 +69,7 @@ public class BattleManager : MonoBehaviour
 
     void Retry()
     {
-        GameManager.instance.GetHealthBar.SetMaxHealth(maxVida);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
     }
 
     void Continue()
