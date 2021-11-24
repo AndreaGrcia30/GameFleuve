@@ -80,6 +80,9 @@ TagManager:
   - name: MARINE
     uniqueID: 1137502913
     locked: 0
+  - name: BOSS
+    uniqueID: 1109598917
+    locked: 0
   - name: Items
     uniqueID: 730743803
     locked: 0
