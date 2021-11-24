@@ -8,7 +8,7 @@ public class RiverFight : BattleActor
     [SerializeField]
     VCamController vcamController;
     Vida health;
-    public BattleManager battleManager;
+    bool defenseMode = false;
 
     new void Awake()
     {
@@ -33,7 +33,7 @@ public class RiverFight : BattleActor
             {
                 diying = true;
                 anim.SetTrigger("Death");
-                battleManager.GameOver();
+                BattleManager.instance.GameOver();
             }
             return;
         }
@@ -43,6 +43,7 @@ public class RiverFight : BattleActor
 
     public void GetDamage()
     {
+
         anim.SetTrigger("Hurt");
     }
 
@@ -61,18 +62,24 @@ public class RiverFight : BattleActor
     public void Defense()
     {
         if(ImDead){
-            Defend=false;
+           DefenseMode = false;
             return;
-        } 
-        anim.SetTrigger("Defense");
-        Defend=true;
+        }
+        anim.SetBool("Defense", true);
+        DefenseMode = true;
 
+    }
+
+    public void DesolveDefense()
+    {
+        anim.SetBool("Defense", false);
+        DefenseMode = false;
     }
 
     public void GiveUp()
     {
         if(ImDead) return;
-        battleManager.GameOver();
+        BattleManager.instance.GameOver();
     }
     public void Run()
     {
@@ -81,5 +88,5 @@ public class RiverFight : BattleActor
     }
 
     bool ImDead => health.CurrentHealth == 0;
-    public static bool Defend;
+    public bool DefenseMode{get => defenseMode; set => defenseMode = value;}
 }
