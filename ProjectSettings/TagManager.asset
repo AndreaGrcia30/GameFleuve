@@ -19,7 +19,7 @@ TagManager:
   - UI
   - Camera
   - Item
-  - Player
+  - 
   - 
   - 
   - 
@@ -47,27 +47,39 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: water
+    uniqueID: 3321637713
+    locked: 0
   - name: ground
     uniqueID: 370234737
-    locked: 0
-  - name: Props
-    uniqueID: 128096285
-    locked: 0
-  - name: PlayerBehind
-    uniqueID: 3762737433
     locked: 0
   - name: walls
     uniqueID: 2172143197
     locked: 0
-  - name: treesbehind
-    uniqueID: 3108036531
+  - name: Props
+    uniqueID: 128096285
+    locked: 0
+  - name: wallsTop
+    uniqueID: 473730987
+    locked: 0
+  - name: home
+    uniqueID: 1034705225
+    locked: 0
+  - name: bushes
+    uniqueID: 1668175215
+    locked: 0
+  - name: forest-back
+    uniqueID: 3162134369
+    locked: 0
+  - name: Player
+    uniqueID: 3762737433
+    locked: 0
+  - name: forest
+    uniqueID: 1628750009
+    locked: 0
+  - name: MARINE
+    uniqueID: 1137502913
     locked: 0
   - name: Items
     uniqueID: 730743803
-    locked: 0
-  - name: trees
-    uniqueID: 24664691
-    locked: 0
-  - name: PlayerOver
-    uniqueID: 126689157
     locked: 0
