@@ -150,6 +150,11 @@ public class Character_Movement : MonoBehaviour
             MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
             SceneManager.LoadScene("BOSS_FIght", LoadSceneMode.Single);
         }
+        if(other.CompareTag("Cutscene"))
+        { 
+            GameManager.instance.LastSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene("Secuestro_cutscene", LoadSceneMode.Single);
+        }
     }
 
 
