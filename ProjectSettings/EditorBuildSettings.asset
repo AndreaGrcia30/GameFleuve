@@ -12,16 +12,24 @@ EditorBuildSettings:
     path: Assets/10_Scenes/Pantalla_Inicio.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/10_Scenes/intro_cutscene.unity
+    guid: 4895952792e9d4a0bab361109c5f101a
+  - enabled: 1
     path: Assets/10_Scenes/LVL1.unity
     guid: c1ad59c743675b44d8c4d0553db5fd00
   - enabled: 1
     path: Assets/10_Scenes/LVL2.unity
     guid: 5ab71a1224c485b43a72de528ddaeb5f
   - enabled: 1
+    path: Assets/10_Scenes/Secuestro_cutscene.unity
+    guid: 01089f531447f445cb60c2da7eebd083
+  - enabled: 1
     path: Assets/10_Scenes/LVL3.unity
     guid: 3a4996bd2fe080b449af262d018b1cac
   - enabled: 1
     path: Assets/10_Scenes/Battle.unity
     guid: cbd4b230445249449b104f392c31d392
-  m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 392bc8397e8eaa9478954f6c7c3433d0, type: 2}
+  - enabled: 1
+    path: Assets/10_Scenes/BOSS_FIght.unity
+    guid: c169f0e0ab6e5a643bba16f1b3c97c58
+  m_configObjects: {}

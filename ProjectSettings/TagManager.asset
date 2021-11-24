@@ -10,6 +10,8 @@ TagManager:
   - wildarea
   - health
   - Enemy
+  - Boss
+  - Cutscene
   layers:
   - Default
   - TransparentFX
@@ -56,8 +58,14 @@ TagManager:
   - name: walls
     uniqueID: 2172143197
     locked: 0
+  - name: alfombra
+    uniqueID: 2225463451
+    locked: 0
   - name: Props
     uniqueID: 128096285
+    locked: 0
+  - name: propsPared
+    uniqueID: 458655673
     locked: 0
   - name: wallsTop
     uniqueID: 473730987
@@ -79,6 +87,9 @@ TagManager:
     locked: 0
   - name: MARINE
     uniqueID: 1137502913
+    locked: 0
+  - name: BOSS
+    uniqueID: 1109598917
     locked: 0
   - name: Items
     uniqueID: 730743803
