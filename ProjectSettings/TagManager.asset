@@ -10,6 +10,7 @@ TagManager:
   - wildarea
   - health
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX
