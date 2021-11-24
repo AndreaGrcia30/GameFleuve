@@ -144,7 +144,14 @@ public class Character_Movement : MonoBehaviour
                 }
             }
         }
+        if(other.CompareTag("Boss"))
+        { 
+            GameManager.instance.LastSceneName = SceneManager.GetActiveScene().name;
+            MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
+            SceneManager.LoadScene("BOSS_FIght", LoadSceneMode.Single);
+        }
     }
+
 
     bool UpRay => Physics2D.Raycast(transform.position, Vector2.up, rayDistance, detectionLayer);
     bool DownRay => Physics2D.Raycast(transform.position, Vector2.down, rayDistance, detectionLayer);
