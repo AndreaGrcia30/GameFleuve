@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Teleport : MonoBehaviour
 {
-    
+    [SerializeField]
+    Button btnNext;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+         btnNext.onClick.AddListener(EndCutscene);
     }
 
     // Update is called once per frame
@@ -27,6 +29,11 @@ public class Teleport : MonoBehaviour
             }
         } 
     }
+
+     void EndCutscene()
+        { 
+            SceneManager.LoadScene("LVL3", LoadSceneMode.Single);
+        }
 
     public void AbandonarTp()
     {
