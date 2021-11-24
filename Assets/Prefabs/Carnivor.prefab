@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3243825130301540229}
   m_Layer: 0
   m_Name: Carnivor
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 1425159849808918006}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d9d7469fbd5b26e48b2099dfc8189ea2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0f3b0fd48da802e45ada0a60a9a94387, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

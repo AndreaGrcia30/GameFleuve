@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 448194995968380657}
   m_Layer: 0
   m_Name: Plant
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 5353759151847667370}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cf75bbc1ee455174896d455bcd1204bb, type: 2}
+  m_Controller: {fileID: 9100000, guid: c9b6bf241028582458b1f845bc8c73e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

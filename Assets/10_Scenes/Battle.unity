@@ -1205,6 +1205,18 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 333579176}
+    - target: {fileID: 4894890630738200104, guid: 21f0e7708c6937a49a56e529bf89039e, type: 3}
+      propertyPath: enemies.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894890630738200104, guid: 21f0e7708c6937a49a56e529bf89039e, type: 3}
+      propertyPath: enemies.Array.data[4]
+      value: 
+      objectReference: {fileID: 5353759151847667370, guid: a49aea47bab705b419a4365eeaafacde, type: 3}
+    - target: {fileID: 4894890630738200104, guid: 21f0e7708c6937a49a56e529bf89039e, type: 3}
+      propertyPath: enemies.Array.data[5]
+      value: 
+      objectReference: {fileID: 1425159849808918006, guid: 9ffc2fc7146945d4d94baf8d49ef23b0, type: 3}
     - target: {fileID: 4894890630738200106, guid: 21f0e7708c6937a49a56e529bf89039e, type: 3}
       propertyPath: m_Name
       value: BattleManager
