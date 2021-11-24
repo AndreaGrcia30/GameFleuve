@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1736225178558855521}
   m_Layer: 0
   m_Name: MobSpear
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +117,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   health: 30
+  battleManager: {fileID: 4894890630738200104, guid: 21f0e7708c6937a49a56e529bf89039e, type: 3}

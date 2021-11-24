@@ -64,6 +64,7 @@ public class ItemSlot : MonoBehaviour
                 Debug.Log($"jugador se cura: {property} puntos de salud");
                 GameManager.instance.GetHealth.CurrentHealth += property;
                 GameManager.instance.UpdateHealthInCurrentData();
+                GameManager.instance.GetHealthBar.SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
                 break;
             case "knife":
                 //Property property = GameManager.instance.GetGameFoundation.GetStaticProperty(definition, "health");

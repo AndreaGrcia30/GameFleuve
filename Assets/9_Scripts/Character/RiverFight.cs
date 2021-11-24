@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RiverFight : BattleActor
 {
     [SerializeField]
     VCamController vcamController;
     Vida health;
+    public BattleManager battleManager;
 
     new void Awake()
     {
@@ -14,9 +16,12 @@ public class RiverFight : BattleActor
         health = GetComponent<Vida>();
     }
 
-    void Start()
+    void OnEnable()
     {
         GameManager.instance.LoadGamplayStuffs();
+        Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
+        //GameManager.instance.GetHealthBar.SetHealth(GameManager.instance.CurrentGameData.CurrentPlayerHealth);
+        //Debug.Log($"current health{GameManager.instance.CurrentGameData.CurrentPlayerHealth}");
         //GameManager.instance.LastSceneName = "Battle";
     }
 
@@ -28,6 +33,7 @@ public class RiverFight : BattleActor
             {
                 diying = true;
                 anim.SetTrigger("Death");
+                battleManager.GameOver();
             }
             return;
         }
@@ -52,5 +58,28 @@ public class RiverFight : BattleActor
         anim.SetTrigger("Attack");
     }
 
+    public void Defense()
+    {
+        if(ImDead){
+            Defend=false;
+            return;
+        } 
+        anim.SetTrigger("Defense");
+        Defend=true;
+
+    }
+
+    public void GiveUp()
+    {
+        if(ImDead) return;
+        battleManager.GameOver();
+    }
+    public void Run()
+    {
+        if(ImDead) return;
+        SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
+    }
+
     bool ImDead => health.CurrentHealth == 0;
+    public static bool Defend;
 }

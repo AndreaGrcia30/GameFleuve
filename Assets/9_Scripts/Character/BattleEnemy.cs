@@ -12,9 +12,10 @@ public class BattleEnemy : BattleActor
 
     void MakeDamage()
     {
+        if(RiverFight.Defend) return;
         GameManager.instance.GetHealth.TakeDamage(damage);
         GameManager.instance.GetRiverFight.GetDamage();
-        GameManager.instance.UpdateHealthInCurrentData();
+        //GameManager.instance.UpdateHealthInCurrentData();
     }
 
     void Update()
@@ -26,7 +27,7 @@ public class BattleEnemy : BattleActor
                 diying = true;
                 anim.SetTrigger("Dead");
                 MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
-                SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
+                BattleManager.instance.Win();
             }
             return;
         }
