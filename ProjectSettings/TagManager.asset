@@ -11,6 +11,7 @@ TagManager:
   - health
   - Enemy
   - Boss
+  - Cutscene
   layers:
   - Default
   - TransparentFX
