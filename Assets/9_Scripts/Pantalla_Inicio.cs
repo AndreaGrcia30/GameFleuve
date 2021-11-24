@@ -35,6 +35,6 @@ public class Pantalla_Inicio : MonoBehaviour
 
     public void teleport()
     {
-            SceneManager.LoadScene("LVL1");
+            SceneManager.LoadScene("Intro_Cutscene");
     }
 }
