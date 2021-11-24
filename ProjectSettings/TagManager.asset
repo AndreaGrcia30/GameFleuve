@@ -58,8 +58,14 @@ TagManager:
   - name: walls
     uniqueID: 2172143197
     locked: 0
+  - name: alfombra
+    uniqueID: 2225463451
+    locked: 0
   - name: Props
     uniqueID: 128096285
+    locked: 0
+  - name: propsPared
+    uniqueID: 458655673
     locked: 0
   - name: wallsTop
     uniqueID: 473730987
