@@ -31,5 +31,8 @@ EditorBuildSettings:
     guid: cbd4b230445249449b104f392c31d392
   - enabled: 1
     path: Assets/10_Scenes/BOSS_FIght.unity
-    guid: c169f0e0ab6e5a643bba16f1b3c97c58
+    guid: 0faa3cb4ed64ad043b6a03d86d466ce7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
