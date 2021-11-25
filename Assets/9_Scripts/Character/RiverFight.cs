@@ -87,6 +87,6 @@ public class RiverFight : BattleActor
         SceneManager.LoadScene(GameManager.instance.LastSceneName, LoadSceneMode.Single);
     }
 
-    bool ImDead => health.CurrentHealth == 0;
+    bool ImDead => health.CurrentHealth <= 0;
     public bool DefenseMode{get => defenseMode; set => defenseMode = value;}
 }

@@ -1152,6 +1152,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2681238582905013796, guid: df5489df55b94ca4b9ff2fc8c1902b6f, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2681238583315677138, guid: df5489df55b94ca4b9ff2fc8c1902b6f, type: 3}
       propertyPath: m_Name
       value: Battle UI
