@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 public class Teleport : MonoBehaviour
 {
     [SerializeField]
     Button btnNext;
-    // Start is called before the first frame update
+     VideoPlayer player;
+    
+    
     void Awake()
     {
          btnNext.onClick.AddListener(EndCutscene);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -39,5 +42,10 @@ public class Teleport : MonoBehaviour
     {
         SceneManager.LoadScene("Pantalla_Inicio");
     }
-}    
+
+
+
+    
+}
+  
 
