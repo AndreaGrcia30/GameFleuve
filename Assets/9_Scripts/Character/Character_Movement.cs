@@ -27,6 +27,7 @@ public class Character_Movement : MonoBehaviour
     LayerMask detectionLayer;
     [SerializeField]
     Vector2 lastAxis;
+    string sceneName;
 
     void Awake()
     {
@@ -37,16 +38,27 @@ public class Character_Movement : MonoBehaviour
     void OnEnable()
     {
         GameManager.instance.LoadGamplayStuffs();
+        
         if(!MemorySystem.LoadGame("gamedata"))
         {
             MemorySystem.NewGame("gamedata");
         }
         /*if(GameManager.instance.LastSceneName != "Battle")
         { }*/
-        string sceneName = SceneManager.GetActiveScene().name;
-        if(sceneName == "LVL1")
-            transform.position = GameManager.instance.CurrentGameData.Position;
+        sceneName = SceneManager.GetActiveScene().name;
+        if(sceneName == "LVL1" || sceneName == "LVL3"){
+            Vector2 pos = GameManager.instance.CurrentGameData.Position(sceneName);
+           ;
+            if(sceneName == "LVL3" && GameManager.instance.LastSceneName == "LVL2")
+                pos = new Vector2();
+
+            transform.position =pos;
+        }
+        
+           
     }
+
+   
 
     void Update()
     {
@@ -89,7 +101,7 @@ public class Character_Movement : MonoBehaviour
     void Move()
     {
         transform.Translate(Axis.normalized * speed * Time.deltaTime);
-         GameManager.instance.CurrentGameData.SetPosition(transform.position);
+         GameManager.instance.CurrentGameData.SetPosition(transform.position, sceneName);
     }
 
     Vector2 Axis => new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

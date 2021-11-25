@@ -24,12 +24,18 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
             gf.Init();
         }
         else
         {
             Destroy(this);
         }
+    }
+
+     void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        if(scene.name == "LVL2")
+            CurrentGameData.SetPosition(new Vector2(), "LVL3");
     }
     
     void OnLevelWasLoaded(int level)
