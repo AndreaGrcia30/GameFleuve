@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
-    //en que nivel estoy??
+    
     void OnLevelWasLoaded(int level)
     {
         Debug.Log("hello level");
@@ -43,10 +43,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadGamplayStuffs()
     {
-        //Debug.Log(SceneManager.GetActiveScene().name);
+        
         health = GameObject.FindWithTag("Player").GetComponent<Vida>();
+    string sceneName = SceneManager.GetActiveScene().name;
 
-        if(SceneManager.GetActiveScene().name == "Battle")
+        if(sceneName == "Battle" || sceneName == "BOSS_FIght")
         {
             //inventoryUIController = GameObject.FindWithTag("inventory").GetComponent<InventoryUIController>();
             //inventorySystem = inventoryUIController.GetInventorySystem;

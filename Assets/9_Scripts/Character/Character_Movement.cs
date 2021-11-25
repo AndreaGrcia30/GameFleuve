@@ -42,24 +42,26 @@ public class Character_Movement : MonoBehaviour
             MemorySystem.NewGame("gamedata");
         }
         /*if(GameManager.instance.LastSceneName != "Battle")
-        {
-        }*/
-        transform.position = GameManager.instance.CurrentGameData.Position;
+        { }*/
+        string sceneName = SceneManager.GetActiveScene().name;
+        if(sceneName == "LVL1")
+            transform.position = GameManager.instance.CurrentGameData.Position;
     }
 
     void Update()
     {
         Move();
+        Debug.Log(lastAxis);
         if(lastAxis.y < 0)
         {
-            if(DownRay)
-            {
+            if(DownRay )
+            { 
                 spr.sortingLayerName = "PlayerBehind";
             }
         }
-        if(lastAxis.y > 0)
+        else if(lastAxis.y > 0)
         {
-            if(UpRay)
+            if(UpRay  )
             {
                 spr.sortingLayerName = "PlayerOver";
             }

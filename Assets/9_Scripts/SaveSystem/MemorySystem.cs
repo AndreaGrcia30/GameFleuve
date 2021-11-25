@@ -67,6 +67,7 @@ namespace GameLib.MemorySystem
         File.WriteAllText(savePath, json);
       }
     }
+    
     //string GetFilePath(string fileName) => Application.persistentDataPath + "/" + fileName + ".json";
     static string GetFilePath(string fileName) => Path.Combine(Application.persistentDataPath, fileName + ".json");
     static bool FileExist(string filePath) => File.Exists(filePath);
