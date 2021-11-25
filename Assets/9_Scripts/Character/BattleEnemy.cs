@@ -12,7 +12,7 @@ public class BattleEnemy : BattleActor
 
     void MakeDamage()
     {
-        if(RiverFight.Defend) return;
+        if(GameManager.instance.GetRiverFight.DefenseMode) return;
         GameManager.instance.GetHealth.TakeDamage(damage);
         GameManager.instance.GetRiverFight.GetDamage();
         //GameManager.instance.UpdateHealthInCurrentData();
@@ -27,7 +27,6 @@ public class BattleEnemy : BattleActor
                 diying = true;
                 anim.SetTrigger("Dead");
                 MemorySystem.SaveGame(GameManager.instance.CurrentGameData, "gamedata");
-                BattleManager.instance.Win();
             }
             return;
         }
@@ -37,11 +36,14 @@ public class BattleEnemy : BattleActor
         //logic
     }
 
+    void Win() => BattleManager.instance.Win();
+
     public void Attack() => anim.SetTrigger("Attack");
     public void CheckEnemyTurn()
     {
         ChangeTurn();
         BattleManager.instance.CheckForEnemyTurn();
+        GameManager.instance.GetRiverFight.DesolveDefense();
     }
 
     public void GetDamage(int damage) => health = health - damage > 0 ? health - damage : 0;
